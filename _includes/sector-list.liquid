@@ -1,0 +1,17 @@
+---
+layout: layout
+---
+
+<main class="ls-container">
+
+<h1 class="page-title">{{ title }}</h1>
+
+{{ content }}
+
+<ul class="ls-list">
+{% for legend in legend %}
+  <li><a href="/sector/{{ legend.name | slug }}">{{ legend.name }}</a> ({{ legend.location }})</li>
+{% endfor %}
+</ul>
+
+</main>

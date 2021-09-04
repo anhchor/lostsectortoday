@@ -1,0 +1,63 @@
+---
+pagination: 
+  data: legend
+  size: 1
+  alias: legend
+permalink: "sector/{{ legend.name | slug }}/"
+layout: layout
+---
+
+<main class="ls-container">
+
+<article class="ls">
+  <div class="ls__meta">
+    Legend (1320)<span class="ls__location">{{ legend.location }}</span>
+  </div>
+  <h1 class="ls__name">{{ legend.name }}</h1>
+
+  <h2>Champions</h2>
+  <ul class="ls__champions-list">
+    {% for champions in legend.champions %}
+      <li class="ls__champions-item">
+        <span class="ls__champion ls__champion--{{ champions.name }}">{{ champions.name }} <span class="ls__champion-count">({{ champions.number }})</span></span>
+        <p class="ls__champion-desc">{{ champions.desc }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <h2>Burn</h2>
+  <span class="ls__element--{{ legend.burn }} ls__element">{{ legend.burn }}</span>
+  <p class="ls__burn-desc">{{ legend.burnDesc }}</p>
+ 
+  <h2>Shields</h2>
+  <ul class="ls__shields-list">
+    {% for shields in legend.shields %}
+      <li class="ls__shields-item">
+        <span class="ls__shield ls__element--{{ shields.name }}">{{ shields.name }} <span class="ls__shields-count">({{ shields.frequency }})</span></span>
+        <p class="ls__shields-desc">{{ shields.desc }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+    
+  <h2>Modifiers</h2>
+  {% for modifiers in legend.modifiers %}
+    <strong>{{ modifiers.name }}</strong> – {{ modifiers.desc }}
+  {% endfor %}
+
+  <h2>Notes</h2>
+  <p>{{ legend.notes }}</p>
+
+  <h2>Personal Loadout</h2>
+  <ul class="ls-list">
+    {% for loadout in legend.loadout %}
+      <li>{{ loadout.kinetic }}</li>
+      <li>{{ loadout.energy }}</li>
+      <li>{{ loadout.power }}</li>
+      <li>{{ loadout.subclass }}</li>
+      <li>{{ loadout.exotic }}</li>
+    {% endfor %}
+  </ul>
+
+</article>
+
+</main>
