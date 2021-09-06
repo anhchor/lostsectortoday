@@ -4,8 +4,36 @@ pagination:
   size: 1
   alias: legend
 permalink: "sector/{{ legend.name | slug }}/"
-layout: layout
 ---
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>{{ legend.name }}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jvh1zdg.css">
+    <link rel="stylesheet" type="text/css" href="/css/ls.css">
+
+    <link rel="shortcut icon" type="image/png" href="/img/lament_16x16.png" />
+    <meta name="robots" content="noindex">
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="destiny diary">
+    <meta property="og:image" content="{{ img }}">
+    <meta property="og:url" content="{{ post.url }}">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+
+<body>
+
+  {% include header %}
 
 <main class="ls-container">
 
@@ -19,21 +47,21 @@ layout: layout
   <ul class="ls__champions-list">
     {% for champions in legend.champions %}
       <li class="ls__champions-item">
-        <span class="ls__champion ls__champion--{{ champions.name }}">{{ champions.name }} <span class="ls__champion-count">({{ champions.number }})</span></span>
+        <h3 class="ls__champion ls__champion--{{ champions.name }}">{{ champions.name }} <span class="ls__champion-count">({{ champions.number }})</span></h3>
         <p class="ls__champion-desc">{{ champions.desc }}</p>
       </li>
     {% endfor %}
   </ul>
   
   <h2>Burn</h2>
-  <span class="ls__element--{{ legend.burn }} ls__element">{{ legend.burn }}</span>
+  <h3 class="ls__element--{{ legend.burn }} ls__element">{{ legend.burn }}</h3>
   <p class="ls__burn-desc">{{ legend.burnDesc }}</p>
  
   <h2>Shields</h2>
   <ul class="ls__shields-list">
     {% for shields in legend.shields %}
       <li class="ls__shields-item">
-        <span class="ls__shield ls__element--{{ shields.name }}">{{ shields.name }} <span class="ls__shields-count">({{ shields.frequency }})</span></span>
+        <h3 class="ls__shield ls__element--{{ shields.name }}">{{ shields.name }} <span class="ls__shields-count">({{ shields.frequency }})</span></h3>
         <p class="ls__shields-desc">{{ shields.desc }}</p>
       </li>
     {% endfor %}
@@ -61,3 +89,6 @@ layout: layout
 </article>
 
 </main>
+
+</body>
+</html>

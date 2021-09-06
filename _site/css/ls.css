@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'neue-world';
-  src: url('../fonts/NeueWorld-Regular.eot');
-  src: url('../fonts/NeueWorld-Regular.woff2') format('woff2'),
-       url('../fonts/NeueWorld-Regular.woff') format('woff'),
-       url('../fonts/NeueWorld-Regular.ttf') format('truetype');
+  font-family: 'object-sans';
+  src: url('../fonts/ObjectSans-Bold.eot');
+  src: url('../fonts/ObjectSans-Bold.woff2') format('woff2'),
+       url('../fonts/ObjectSans-Bold.woff') format('woff'),
+       url('../fonts/ObjectSans-Bold.ttf') format('truetype');
 }
 
 :root {
@@ -12,14 +12,14 @@
   --text-sub: #9cb7d6;
   --border: #637589;
 
-  --pink: #e23a98;
-  --blue: #6BBBDA;
+  /*--pink: #e23a98;
+  --blue: #6BBBDA;*/
 
-  --accent: var(--pink);
-  --complement: var(--blue);
+  --accent: #4cc4d7;
+  --complement: #C18DD8;
 
   --font-body: 'inter', sans-serif;
-  --font-heading: 'neue-world', georgia, serif;
+  --font-heading: 'object-sans', georgia, serif;
   --font-mono: monospace;
   
 
@@ -202,12 +202,12 @@ img {
 }
 .ls__name,
 .page-title {
-  margin: 0;
+  margin: 0 0 .5rem;
 
   color: var(--accent);
   font-size: var(--font-size-xl);
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.1;
 }
 .ls__name > a {
   color: var(--accent);
@@ -231,10 +231,15 @@ img {
 
 
 h2 {
+  font-family: var(--font-heading);
+  font-weight: normal;
   margin: 1.5em 0 .25em;
   color: var(--complement);
 }
-
+h3 {
+  font-size: 1.15em;
+  margin: 0;
+}
 
 
 .ls__champions-list,

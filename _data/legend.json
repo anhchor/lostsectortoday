@@ -70,6 +70,16 @@
         "name": "Epitaph",
         "desc": "Taken combatants generate blight geysers when defeated."
       }
+    ],
+    "notes": "Lots of Taken Acolytes and Thralls.",
+    "loadout": [
+      {
+        "kinetic": "Ignition Code",
+        "energy": "Le Monarque",
+        "power": "Corsair's Wrath",
+        "subclass": "Top-tree Dawnblade",
+        "exotic": "Sunbracers"
+      }
     ]
   },
   {
@@ -79,7 +89,7 @@
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Appear on far away ledges, and often move behind cover."
+        "desc": "Appear on far away platforms, and often move behind cover."
       },
       {
         "name": "Unstoppable",
@@ -101,14 +111,14 @@
         "desc": "Taken combatants generate blight geysers when defeated."
       }
     ],
-    "notes": "Taken Psions duplicate frequently and quickly.",
+    "notes": "Taken Psions duplicate frequently and quickly. Lots of Stasis AOE damage in the boss area.",
     "loadout": [
       {
-        "kinetic": "The Time-worn Spire",
-        "energy": "Le Monarque",
-        "power": "Code Duello",
-        "subclass": "Thundercrash (Titan)",
-        "exotic": "Cuirass of the Falling Star"
+        "kinetic": "Whispering Slab",
+        "energy": "Lorentz Driver / Graviton Lance",
+        "power": "Threaded Needle",
+        "subclass": "Stasis Warlock",
+        "exotic": "Eye of Another World"
       }
     ]
   },

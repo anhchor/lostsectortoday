@@ -527,6 +527,7 @@ function toSlug(text) {
   return text
     .toLowerCase()
     .replace(/ /g,'-')
+    .replace(/’/g,"'")
     ;
 }
 
