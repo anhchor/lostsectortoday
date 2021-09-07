@@ -557,8 +557,8 @@ function build() {
   for (i = 0; i < 7; i++) {
     rotate();
 
-    console.log(`Today is Day ${elapsed} of the season.`);
-    console.log(`Today's Legend Lost Sector is ${todaySector} and it drops ${todayDrop}.`);
+    //console.log(`Today is Day ${elapsed} of the season.`);
+    //console.log(`Today's Legend Lost Sector is ${todaySector} and it drops ${todayDrop}.`);
     // elapsed += 1;
   }
 }
@@ -566,7 +566,7 @@ function build() {
 build();
 
 todaySectorId = getTodayId(sectorRotation);
-console.log(todaySectorId);
+
 
 
 
@@ -609,3 +609,45 @@ let modifierDesc = document.querySelector('.ls__modifier-desc');
 
 modifierName.textContent = lostSectors[todaySectorId].modifiers[0].name;
 modifierDesc.textContent = lostSectors[todaySectorId].modifiers[0].desc;
+
+
+
+
+  
+
+
+// konami code
+// https://codepen.io/cferdinandi/pen/qBWVPqL?editors=0010
+var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+var current = 0;
+
+var keyHandler = function (event) {
+
+	// If the key isn't in the pattern, or isn't the current key in the pattern, reset
+	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+		current = 0;
+		return;
+	}
+
+	// Update how much of the pattern is complete
+	current++;
+
+	// If complete, alert and reset
+	if (pattern.length === current) {
+		current = 0;
+
+    // https://github.com/loonywizard/js-confetti
+		const jsConfetti = new JSConfetti()
+    jsConfetti.addConfetti({
+      emojis: ['🍉'],
+    })
+	}
+
+};
+
+// Listen for keydown events
+document.addEventListener('keydown', keyHandler, false);
+
+
+
+

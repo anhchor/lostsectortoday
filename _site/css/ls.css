@@ -175,6 +175,15 @@ img {
 }
 
 
+.watermelon > .ls-outer {
+  fill: #69eb69;
+}
+.watermelon > .ls-inner {
+  fill: #eb5151;
+}
+.watermelon > .ls-circle {
+  fill:#ff7d56;
+}
 
 
 
