@@ -27,7 +27,7 @@
         "desc": "Scorn Raiders now have Void shields."
       }
     ],
-    "notes": "Lots of screebs. Boss room ads spawn infinitely. Ads will jump up onto platform where you enter.",
+    "notes": "Lots of screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter.",
     "loadout": [
       {
         "kinetic": "The Time-worn Spire",
@@ -133,8 +133,8 @@
       },
       {
         "name": "Barrier",
-        "number": 2,
-        "desc": "Barrier servitors shield lots of ads."
+        "number": 3,
+        "desc": "2 Barrier servitors that shield lots of ads; 1 Barrier Colossus."
       }
     ],
     "burn": "Solar",
@@ -151,12 +151,13 @@
         "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
       }
     ],
+    "notes": "In the spooky hallway between the two rooms, there are thrall and Cabal dogs.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
         "energy": "Le Monarque",
         "power": "Code Duello",
-        "subclass": "Well of Radiance (Warlock)",
+        "subclass": "Well of Radiance",
         "exotic": "Sunbracers"
       }
     ]
@@ -239,7 +240,7 @@
         "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Boss appears after you kill the Heavy Shank. You can prevent the 5th Barrier Servitor and a wave of exploding shanks from spawning if you kill the boss fast enough.",
+    "notes": "Boss appears after you kill the Heavy Shank. You can prevent the third Barrier Servitor and a wave of exploding shanks from spawning if you kill the boss fast enough.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -257,24 +258,20 @@
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Fallen captains."
+        "desc": "Fallen Captains."
       },
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "Last Barrier servitor spawns when the boss is at 50% health."
+        "desc": "Barrier Servitors. Last Barrier Servitor spawns when the boss is at 50% health."
       }
     ],
     "burn": "Arc",
     "shields": [
       {
         "name": "Solar",
-        "frequency": 1,
-        "desc": "Heavy Shank in boss room."
-      },
-      {
-        "name": "Void",
-        "frequency": "few"
+        "frequency": "many",
+        "desc": "Shanks have solar shields."
       }
     ],
     "modifiers": [
@@ -283,7 +280,16 @@
         "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Boss appears after you kill the Heavy Shank. You can prevent the 5th Barrier Servitor and a wave of exploding shanks from spawning if you kill the boss fast enough."
+    "notes": "",
+    "loadout": [
+      {
+        "kinetic": "Chroma Rush",
+        "energy": "Trinity Ghoul",
+        "power": "Sleepless",
+        "subclass": "Chaos Reach",
+        "exotic": "Geomag Stabilizers"
+      }
+    ]
   },
   {
     "name": "K1 Revelation",
@@ -314,7 +320,7 @@
         "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
       }
     ],
-    "notes": "",
+    "notes": "Destroy the floating crystals to advance to the boss fight. Many ads still spawn after you defeat the boss, so getting to the chest without killing them is challenging.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -373,7 +379,7 @@
       {
         "name": "Overload",
         "number": 3,
-        "desc": "Minotaurs."
+        "desc": "Overload Minotaurs."
       },
       {
         "name": "Barrier",
@@ -395,7 +401,7 @@
         "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
       }
     ],
-    "notes": "Final Overload champion sometimes doesn't spawn in boss room if you kill the boss fast enough. One Wyvern in boss room.",
+    "notes": "Third Overload champion sometimes doesn't spawn in boss room if you kill the boss fast enough. One Wyvern in boss room.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -413,12 +419,12 @@
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Minotaurs."
+        "desc": "Overload Minotaurs."
       },
       {
         "name": "Barrier",
         "number": 2,
-        "desc": "Hobgoblins."
+        "desc": "Barrier Hobgoblins."
       }
     ],
     "burn": "Arc",
@@ -440,7 +446,7 @@
         "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
       }
     ],
-    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to melt it ASAP so it doesn't snipe you in the second room.",
+    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to kill it sooner rather than later. Boss can be melted with a super as soon as it spawns.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",

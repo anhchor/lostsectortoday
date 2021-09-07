@@ -48,9 +48,9 @@
   :root {
     --font-size: 1em;
     --font-size: 100%;
-    --font-size-xl: 2.25em;
+    --font-size-xl: 2em;
     --font-size-lg: 1.65em;
-    --font-size-md: 1.1em;
+    --font-size-md: 1.25em;
     --font-size-sm: .8em;
     
 
@@ -123,6 +123,9 @@ img {
   .site-nav {
     grid-column: 2 / 3;
   }
+  .site-nav__item {
+    margin-right: 1.5em;
+  }
 
 }
 @media screen and (max-width: 899px) {
@@ -130,6 +133,12 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+  }
+  .header__title {
+    flex: 1 0 90%;
+  }
+  .site-nav__item {
+    margin-right: 1em;
   }
 }
 .header__icon {
@@ -163,9 +172,6 @@ img {
 
   display: flex;
   flex-wrap: wrap;
-}
-.site-nav__item {
-  margin-right: 1.5em;
 }
 
 
@@ -232,9 +238,13 @@ img {
 
 h2 {
   font-family: var(--font-heading);
+  font-size: var(--font-size-md);
   font-weight: normal;
   margin: 1.5em 0 .25em;
   color: var(--complement);
+}
+h2 + p {
+  margin-top: .5em;
 }
 h3 {
   font-size: 1.15em;
@@ -262,7 +272,7 @@ h3 {
 .ls__shields-count {
   color: var(--text-sub);
   font-weight: normal;
-  margin-left: .5em;
+  margin-left: .25em;
 }
 .ls__champion-desc,
 .ls__shields-desc,
@@ -272,19 +282,19 @@ h3 {
 
 
 
-
+.ls__champion::before,
+.ls__element::before {
+  margin-right: .25em;
+}
 
 .ls__champion--Overload::before {
   content: url('/svg/overload-white.svg');
-  margin-right: .5em;
 }
 .ls__champion--Unstoppable::before {
   content: url('/svg/unstoppable.svg');
-  margin-right: .5em;
 }
 .ls__champion--Barrier::before {
   content: url('/svg/barrier.svg');
-  margin-right: .5em;
 }
 .ls__champion:not(:last-of-type)::after,
 .ls__shield:not(:last-of-type)::after {
@@ -293,19 +303,15 @@ h3 {
 
 .ls__element--Arc::before {
   content: url('/svg/arc.svg');
-  margin-right: .5em;
 }
 .ls__element--Stasis::before {
   content: url('/svg/stasis.svg');
-  margin-right: .5em;
 }
 .ls__element--Solar::before {
   content: url('/svg/solar.svg');
-  margin-right: .5em;
 }
 .ls__element--Void::before {
   content: url('/svg/void.svg');
-  margin-right: .5em;
 }
 
 
@@ -322,6 +328,18 @@ h3 {
   position: relative;
 }
 
+
+
+
+
+.loadout {
+  list-style-type: none;
+  margin: .5em 0 0;
+  padding: 0;
+}
+.loadout > li {
+  margin-bottom: .15em;
+}
 
 
 
@@ -392,7 +410,9 @@ h3 {
   font-size: var(--font-size-lg);
   color: var(--accent);
   text-align: center;
-  line-height: 1;
+  line-height: 1.15;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .calendar {
   list-style-type: none;

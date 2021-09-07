@@ -20,7 +20,6 @@ const lostSectors = [
         "name": "Unstoppable",
         "number": 3,
         "desc": "Last champion spawns when you get closer to the cave barrier."
-
       }
     ],
     "burn": "Arc",
@@ -37,7 +36,16 @@ const lostSectors = [
         "desc": "Scorn Raiders now have Void shields."
       }
     ],
-    "notes": "Lots of screebs outside. Boss room ads spawn infinitely. Ads will jump up onto platform at the entrance."
+    "notes": "Lots of screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter.",
+    "loadout": [
+      {
+        "kinetic": "The Time-worn Spire",
+        "energy": "Trinity Ghoul",
+        "power": "Sleepless",
+        "subclass": "Chaos Reach",
+        "exotic": "Geomag Stabilizers"
+      }
+    ]
   },
   {
     "name": "Chamber of Starlight",
@@ -71,6 +79,16 @@ const lostSectors = [
         "name": "Epitaph",
         "desc": "Taken combatants generate blight geysers when defeated."
       }
+    ],
+    "notes": "Lots of Taken Acolytes and Thralls.",
+    "loadout": [
+      {
+        "kinetic": "Ignition Code",
+        "energy": "Le Monarque",
+        "power": "Corsair's Wrath",
+        "subclass": "Top-tree Dawnblade",
+        "exotic": "Sunbracers"
+      }
     ]
   },
   {
@@ -80,7 +98,7 @@ const lostSectors = [
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Appear on far away ledges, and often move behind cover."
+        "desc": "Appear on far away platforms, and often move behind cover."
       },
       {
         "name": "Unstoppable",
@@ -102,14 +120,14 @@ const lostSectors = [
         "desc": "Taken combatants generate blight geysers when defeated."
       }
     ],
-    "notes": "Taken Psions duplicate frequently and quickly.",
+    "notes": "Taken Psions duplicate frequently and quickly. Lots of Stasis AOE damage in the boss area.",
     "loadout": [
       {
-        "kinetic": "The Time-worn Spire",
-        "energy": "Le Monarque",
-        "power": "Code Duello",
-        "subclass": "Thundercrash (Titan)",
-        "exotic": "Cuirass of the Falling Star"
+        "kinetic": "Whispering Slab",
+        "energy": "Lorentz Driver / Graviton Lance",
+        "power": "Threaded Needle",
+        "subclass": "Stasis Warlock",
+        "exotic": "Eye of Another World"
       }
     ]
   },
@@ -124,8 +142,8 @@ const lostSectors = [
       },
       {
         "name": "Barrier",
-        "number": 2,
-        "desc": "Barrier servitors shield lots of ads."
+        "number": 3,
+        "desc": "2 Barrier servitors that shield lots of ads; 1 Barrier Colossus."
       }
     ],
     "burn": "Solar",
@@ -142,12 +160,13 @@ const lostSectors = [
         "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
       }
     ],
+    "notes": "In the spooky hallway between the two rooms, there are thrall and Cabal dogs.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
         "energy": "Le Monarque",
         "power": "Code Duello",
-        "subclass": "Well of Radiance (Warlock)",
+        "subclass": "Well of Radiance",
         "exotic": "Sunbracers"
       }
     ]
@@ -164,7 +183,7 @@ const lostSectors = [
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "Barrier servitors shield lots of ads."
+        "desc": "Barrier servitors."
       }
     ],
     "burn": "Void",
@@ -177,7 +196,7 @@ const lostSectors = [
       {
         "name": "Arc",
         "frequency": "few",
-        "desc": "Fallen Captains have Arc shields. They spawn in the first area and the boss area."
+        "desc": "Fallen Captains have Arc shields. There's one in the first area and a few in the boss area."
       }
     ],
     "modifiers": [
@@ -186,7 +205,7 @@ const lostSectors = [
         "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Servitor Boss teleports twice at each 3rd of its health, from middle → left → right.",
+    "notes": "Servitor Boss teleports twice at each 3rd of its health, starting from middle → left → right.",
     "loadout": [
       {
         "kinetic": "Scathelocke",
@@ -230,7 +249,7 @@ const lostSectors = [
         "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Boss appears after you kill the Heavy Shank. You can prevent the 5th Barrier Servitor and a wave of exploding shanks from spawning if you kill the boss fast enough.",
+    "notes": "Boss appears after you kill the Heavy Shank. You can prevent the 3rd Barrier Servitor and a wave of exploding shanks from spawning if you kill the boss fast enough.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -248,24 +267,20 @@ const lostSectors = [
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Fallen captains."
+        "desc": "Fallen Captains."
       },
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "Last Barrier servitor spawns when the boss is at 50% health."
+        "desc": "Barrier Servitors. Last Barrier Servitor spawns when the boss is at 50% health."
       }
     ],
     "burn": "Arc",
     "shields": [
       {
         "name": "Solar",
-        "frequency": 1,
-        "desc": "Heavy Shank in boss room."
-      },
-      {
-        "name": "Void",
-        "frequency": "few"
+        "frequency": "many",
+        "desc": "Shanks have solar shields."
       }
     ],
     "modifiers": [
@@ -274,14 +289,14 @@ const lostSectors = [
         "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Boss appears after you kill the Heavy Shank. You can prevent the 5th Barrier Servitor and a wave of exploding shanks from spawning if you kill the boss fast enough.",
+    "notes": "",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
-        "energy": "Riskrunner",
-        "power": "Code Duello",
-        "subclass": "Top-tree Nova Bomb",
-        "exotic": "Contraverse Hold"
+        "energy": "Trinity Ghoul",
+        "power": "Sleepless",
+        "subclass": "Chaos Reach",
+        "exotic": "Geomag Stabilizers"
       }
     ]
   },
@@ -306,24 +321,20 @@ const lostSectors = [
         "name": "Arc",
         "frequency": "few",
         "desc": "Arc knights."
-      },
-      {
-        "name": "Void",
-        "frequency": "few"
       }
     ],
     "modifiers": [
       {
-        "name": "Hot Knife",
-        "desc": "Shanks now have Solar shields."
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
       }
     ],
-    "notes": "",
+    "notes": "Destroy the floating crystals to advance to the boss fight. Many ads still spawn after you defeat the boss, so getting to the chest without killing them is challenging.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
-        "energy": "Riskrunner",
-        "power": "Code Duello",
+        "energy": "Lorentz Driver",
+        "power": "Bad Omens",
         "subclass": "Top-tree Nova Bomb",
         "exotic": "Contraverse Hold"
       }
@@ -344,30 +355,31 @@ const lostSectors = [
         "desc": "Barrier Servitor."
       }
     ],
-    "burn": "Void",
+    "burn": "Solar",
     "shields": [
       {
         "name": "Void",
         "frequency": "few",
-        "desc": "Void minotaurs."
+        "desc": "Void servitors."
+      },
+      {
+        "name": "Solar",
+        "frequency": "few",
+        "desc": "Solar shanks."
+      },
+      {
+        "name": "Arc",
+        "frequency": 1,
+        "desc": "Fallen captain."
       }
     ],
     "modifiers": [
       {
-        "name": "Shocker",
-        "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
+        "name": "Arach-NO!",
+        "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
       }
     ],
-    "notes": "Final Overload champion sometimes doesn't spawn in boss room if you kill the boss fast enough. One Wyvern in boss room.",
-    "loadout": [
-      {
-        "kinetic": "Chroma Rush",
-        "energy": "Le Monarque",
-        "power": "Bad Omens",
-        "subclass": "Top-tree Nova Bomb",
-        "exotic": "Contraverse Hold"
-      }
-    ]
+    "notes": ""
   },
   {
     "name": "Bunker E15",
@@ -376,7 +388,7 @@ const lostSectors = [
       {
         "name": "Overload",
         "number": 3,
-        "desc": "Minotaurs."
+        "desc": "Overload Minotaurs."
       },
       {
         "name": "Barrier",
@@ -398,7 +410,7 @@ const lostSectors = [
         "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
       }
     ],
-    "notes": "Final Overload champion sometimes doesn't spawn in boss room if you kill the boss fast enough. One Wyvern in boss room.",
+    "notes": "Third Overload champion sometimes doesn't spawn in boss room if you kill the boss fast enough. One Wyvern in boss room.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -416,12 +428,12 @@ const lostSectors = [
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Minotaurs."
+        "desc": "Overload Minotaurs."
       },
       {
         "name": "Barrier",
         "number": 2,
-        "desc": "Hobgoblins."
+        "desc": "Barrier Hobgoblins."
       }
     ],
     "burn": "Arc",
@@ -443,7 +455,7 @@ const lostSectors = [
         "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
       }
     ],
-    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to melt it ASAP so it doesn't snipe you in the second room.",
+    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to kill it sooner rather than later. Boss can be melted with a super as soon as it spawns.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -587,7 +599,7 @@ for (i = 0; i < lostSectors[todaySectorId].champions.length; i++) {
 let shieldWrapper = document.querySelector('.ls__shield-wrapper');
 for (i = 0; i < lostSectors[todaySectorId].shields.length; i++) {
   let newShield = document.createElement('span');
-  newShield.classList.add('ls__shield', `ls__element--${lostSectors[todaySectorId].shields[i].name}`);
+  newShield.classList.add('ls__shield', 'ls__element', `ls__element--${lostSectors[todaySectorId].shields[i].name}`);
   newShield.textContent = lostSectors[todaySectorId].shields[i].name;
   shieldWrapper.appendChild(newShield);
 }
