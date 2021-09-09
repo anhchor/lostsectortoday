@@ -617,7 +617,7 @@ modifierDesc.textContent = lostSectors[todaySectorId].modifiers[0].desc;
 
 
 // konami code
-// https://codepen.io/cferdinandi/pen/qBWVPqL?editors=0010
+// https://gomakethings.com/how-to-create-a-konami-code-easter-egg-with-vanilla-js/
 var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 var current = 0;
 

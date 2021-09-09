@@ -27,7 +27,7 @@
         "desc": "Scorn Raiders now have Void shields."
       }
     ],
-    "notes": "Lots of screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter.",
+    "notes": "Lots of Screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter.",
     "loadout": [
       {
         "kinetic": "The Time-worn Spire",
@@ -71,7 +71,7 @@
         "desc": "Taken combatants generate blight geysers when defeated."
       }
     ],
-    "notes": "Lots of Taken Acolytes and Thralls.",
+    "notes": "Lots of Taken Acolytes and Thrall.",
     "loadout": [
       {
         "kinetic": "Ignition Code",
@@ -129,12 +129,12 @@
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Fallen captains. One in LS entrance before the first room; second one spawns in boss room from the left door, after you kill the initial three enemies."
+        "desc": "Fallen Captains. One in LS entrance before the first room; second one spawns in boss room from the left door, after you kill the initial three enemies."
       },
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "2 Barrier servitors that shield lots of ads; 1 Barrier Colossus."
+        "desc": "2 Barrier Servitors that shield lots of ads; 1 Barrier Colossus."
       }
     ],
     "burn": "Solar",
@@ -151,7 +151,7 @@
         "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
       }
     ],
-    "notes": "In the spooky hallway between the two rooms, there are thrall and Cabal dogs.",
+    "notes": "In the spooky hallway between the first and boss rooms, there are Thrall and Cabal dogs. The boss frequently turns invisible.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -169,12 +169,12 @@
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Fallen captains."
+        "desc": "Fallen Captains."
       },
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "Barrier servitors."
+        "desc": "Barrier Servitors."
       }
     ],
     "burn": "Void",
@@ -196,7 +196,7 @@
         "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Servitor Boss teleports twice at each 3rd of its health, starting from middle → left → right.",
+    "notes": "Servitor boss teleports twice at each 3rd of its health, starting from middle → left → right.",
     "loadout": [
       {
         "kinetic": "Scathelocke",
@@ -231,7 +231,8 @@
       },
       {
         "name": "Void",
-        "frequency": "few"
+        "frequency": "few",
+        "desc": "A few Void Servitors."
       }
     ],
     "modifiers": [
@@ -240,7 +241,7 @@
         "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Boss appears after you kill the Heavy Shank. You can prevent the third Barrier Servitor and a wave of exploding shanks from spawning if you kill the boss fast enough.",
+    "notes": "Boss appears after you kill the ads and Heavy Shank. You can prevent the third Barrier Servitor and a wave of Exploder Shanks from spawning if you kill the boss fast enough.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
@@ -303,7 +304,7 @@
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "Barrier hobgoblins."
+        "desc": "Barrier Hobgoblins. The last one will spawn alongside the boss."
       }
     ],
     "burn": "Void",
@@ -351,17 +352,17 @@
       {
         "name": "Void",
         "frequency": "few",
-        "desc": "Void servitors."
+        "desc": "Void Servitors."
       },
       {
         "name": "Solar",
         "frequency": "few",
-        "desc": "Solar shanks."
+        "desc": "Solar Shanks."
       },
       {
         "name": "Arc",
         "frequency": 1,
-        "desc": "Fallen captain."
+        "desc": "Fallen Captain."
       }
     ],
     "modifiers": [
@@ -392,7 +393,7 @@
       {
         "name": "Void",
         "frequency": "few",
-        "desc": "Void minotaurs."
+        "desc": "Void Minotaurs."
       }
     ],
     "modifiers": [
@@ -432,12 +433,12 @@
       {
         "name": "Void",
         "frequency": 2,
-        "desc": "Void minotaurs."
+        "desc": "Void Minotaurs."
       },
       {
         "name": "Arc",
         "frequency": "many",
-        "desc": "Arc harpies."
+        "desc": "Arc Harpies."
       }
     ],
     "modifiers": [
