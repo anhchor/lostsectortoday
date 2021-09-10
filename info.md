@@ -6,7 +6,7 @@ title: Basic Info
 
 ## Overview 
 
-Every day, a Lost Sector is set at Legend difficulty (1320) and Master difficulty (1350). It's highlighted on the map; you must first clear the LS normally on your character before it shows up as available for Legend/Master.
+Every day, a Lost Sector is set at Legend difficulty (1320) and another at Master difficulty (1350). They're highlighted on the map; you must first clear the LS normally on the character you're playing, even if you cleared it on another character, before it shows up as available for Legend/Master.
 
 This site covers **Legend** Lost Sectors only.
 
