@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Basic Info
+title: About
 ---
 
 
-## Overview 
+## Lost Sectors Overview 
 
-Every day, a Lost Sector is set at Legend difficulty (1320) and another at Master difficulty (1350). They're highlighted on the map; you must first clear the LS normally on the character you're playing, even if you cleared it on another character, before it shows up as available for Legend/Master.
+Every day, a Lost Sector is set at Legend difficulty (1320) and another at Master difficulty (1350). They're highlighted on the map; you must first clear the LS normally on your current character, even if you cleared it on another character, before it shows up as available for Legend/Master.
 
 This site covers **Legend** Lost Sectors only.
 
@@ -28,3 +28,9 @@ All Legend Lost Sectors have the following modifiers:
 - **Match Game**: enemy shields are very resistant to non-matching elemental damage.
 - **Locked Equipment**: you can't change your loadout once you begin.
 - **Limited Revives**: you start with a few revives; defeating a champion gets you +1 revive. You wipe when you die with no revives left. Revives no longer work after 15 minutes.
+
+
+
+## Contact
+
+Send errors, issues, comments, etc. to densemint [at] gmail [dot] com.
