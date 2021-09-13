@@ -648,6 +648,3 @@ var keyHandler = function (event) {
 // Listen for keydown events
 document.addEventListener('keydown', keyHandler, false);
 
-
-console.log('type a secret code for a refreshing surprise.');
-

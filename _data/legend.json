@@ -344,20 +344,20 @@
       {
         "name": "Barrier",
         "number": 1,
-        "desc": "Barrier Servitor."
+        "desc": "Barrier Servitor that shields enemies. It frequently teleports behind cover."
       }
     ],
     "burn": "Solar",
     "shields": [
       {
         "name": "Void",
-        "frequency": "few",
-        "desc": "Void Servitors."
+        "frequency": 2,
+        "desc": "Void Servitor in the boss room that shields enemies. You can get away with ignoring it and focusing only on the boss. It seems that if you kill the first one, another will spawn in a later wave."
       },
       {
         "name": "Solar",
-        "frequency": "few",
-        "desc": "Solar Shanks."
+        "frequency": 2,
+        "desc": "Heavy Shanks."
       },
       {
         "name": "Arc",
@@ -371,7 +371,7 @@
         "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
       }
     ],
-    "notes": ""
+    "notes": "There's a wave of Exploder Shanks when you jump across the gap before the boss room. The boss is a Fallen Captain that teleports around."
   },
   {
     "name": "Bunker E15",
@@ -380,7 +380,7 @@
       {
         "name": "Overload",
         "number": 3,
-        "desc": "Overload Minotaurs."
+        "desc": "Overload Captain in the beginning. Two Overload Minotaurs in the boss room, though the second one sometimes doesn't spawn if you defeat the boss quickly enough."
       },
       {
         "name": "Barrier",
@@ -402,7 +402,7 @@
         "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
       }
     ],
-    "notes": "Third Overload champion sometimes doesn't spawn in boss room if you kill the boss fast enough. One Wyvern in boss room.",
+    "notes": "Cyclops in the big room. One Wyvern in the boss room. The third Overload champion sometimes doesn't spawn in the boss room if you defeat the boss quickly enough. Boss is a Hydra that slowly teleports around.",
     "loadout": [
       {
         "kinetic": "Chroma Rush",
