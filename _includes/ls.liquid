@@ -1,9 +1,16 @@
 ---
 layout: layout
+eleventyComputed: 
+  testing: |
+    {{ legend[1].name }}
+  idname: 1
+
 ---
 
 <main class="ls-container">
 
+{% comment %} {{ myString }}
+{{ legend[idname].name }} {% endcomment %}
 
 <article class="ls">
   <div class="ls__meta">

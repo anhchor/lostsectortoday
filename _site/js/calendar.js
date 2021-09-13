@@ -102,14 +102,27 @@ function build() {
 }
 
 
+function toSlug(text) {
+  return text
+    .toLowerCase()
+    .replace(/ /g,'-') // replace space with dash
+    .replace(/’/g,"'") // replace curly quote with straight quote
+    ;
+}
+
+
+
 let calendar = document.querySelector('.calendar');
 
 
 function buildDay() {
+  let todaySectorSlug = toSlug(todaySector);
+  console.log(todaySectorSlug);
+
   let day = document.createElement('li');
   day.classList.add('day', 'day--active');
   day.innerHTML = `
-    <p class="ls-name">${todaySector}</p>
+    <p class="ls-name"><a href="/sector/${todaySectorSlug}">${todaySector}</a></p>
     <p class="ls-drop">${todayDrop}</p>
   `;
   calendar.appendChild(day);
@@ -132,7 +145,6 @@ function newDayAugust() {
   }
 }
 
-// newDayAugust();
 
 function newDaySep() {
   currentDay = 1;
