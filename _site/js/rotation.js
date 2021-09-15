@@ -1,5 +1,6 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
+  // Season 15 - Season of the Lost
   "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion's Rest", 
   "The Empty Tank",
   "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
@@ -8,17 +9,8 @@ const sectorList = [
 
 
 
-let today = new Date();
-const options = { year: 'numeric', month: 'short', day: 'numeric' };
-today = today.toLocaleDateString('en-US', options);
-
-
-// let dateWrapper = document.querySelector('.header__date');
-// dateWrapper.textContent = today;
-
 let seasonLostStart = new Date(Date.UTC(2021, 7, 24, 17, 0, 0));
 let seasonLostEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
-
 
 let now = Date.now();
 let currentDayOfSeason = now - seasonLostStart;
@@ -29,8 +21,8 @@ function toDays(x) {
   return x;
 }
 
-currentDayOfSeason = toDays(currentDayOfSeason);
-
+// currentDayOfSeason = toDays(currentDayOfSeason);
+currentDayOfSeason = Math.floor((currentDayOfSeason / 1000 / 60 / 60 / 24) + 1)
 
 let todayDrop;
 let todaySector;
@@ -65,60 +57,23 @@ function toSlug(text) {
     ;
 }
 
-
-
-//todayDrop = dropList[getTodayId(dropList)]; // today's drop
-// todaySector = lostSectors[getTodayId(sectorList)].name; // name of today's lost sector
-//todaySectorId = getTodayId(sectorList); // id of today's lost sector
-
-
-
-todayDrop = dropList[getTodayId(dropList)]; // today's drop
-todaySectorId = getTodayId(sectorList); // id of today's lost sector
-
-let requestURL = 'js/legend.json';
-//let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function() {
-  lostSectors = request.response;
-
-  todayDrop = dropList[getTodayId(dropList)]; // today's drop
-  todaySectorId = getTodayId(sectorList); // id of today's lost sector
-  todaySector = lostSectors[getTodayId(sectorList)].name; // name of today's lost sector
-  
-  fillInfo();
-}
-
-
-
-
 function fillInfo() {
   // insert all this info into the html page
   // sorry this is silly 
-
-
-  let sectorName = document.querySelector('.ls__link');
-  let readmore = document.querySelector('.readmore');
-  sectorName.textContent = todaySector;
   todaySectorSlug = toSlug(todaySector);
-  sectorName.setAttribute("href", `sector/${todaySectorSlug}`);
-  readmore.setAttribute("href", `sector/${todaySectorSlug}`);
 
-  let sectorLocation = document.querySelector('.ls__location');
-  sectorLocation.textContent = lostSectors[todaySectorId].location;
+  document.querySelector('.ls__link').textContent = todaySector;
+  document.querySelector('.ls__link').setAttribute("href", `sector/${todaySectorSlug}`)
+  document.querySelector('.readmore').setAttribute("href", `sector/${todaySectorSlug}`);
 
-  let sectorDrop = document.querySelector('.ls__drop-item');
-  sectorDrop.textContent = todayDrop;
+  document.querySelector('.ls__location').textContent = lostSectors[todaySectorId].location;
+  document.querySelector('.ls__drop-item').textContent = todayDrop;
 
   let sectorBurn = document.querySelector('.ls__burn');
   sectorBurn.classList.add(`ls__element--${lostSectors[todaySectorId].burn}`);
   sectorBurn.textContent = lostSectors[todaySectorId].burn;
 
   let championWrapper = document.querySelector('.ls__champion-wrapper');
-
   for (i = 0; i < lostSectors[todaySectorId].champions.length; i++) {
     let newChampion = document.createElement('span');
     newChampion.classList.add('ls__champion', `ls__champion--${lostSectors[todaySectorId].champions[i].name}`);
@@ -134,10 +89,34 @@ function fillInfo() {
     shieldWrapper.appendChild(newShield);
   }
 
-  let modifierName = document.querySelector('.ls__modifier-name');
-  let modifierDesc = document.querySelector('.ls__modifier-desc');
-
-  modifierName.textContent = lostSectors[todaySectorId].modifiers[0].name;
-  modifierDesc.textContent = lostSectors[todaySectorId].modifiers[0].desc;
-
+  document.querySelector('.ls__modifier-name').textContent = lostSectors[todaySectorId].modifiers[0].name;
+  document.querySelector('.ls__modifier-desc').textContent = lostSectors[todaySectorId].modifiers[0].desc;
 }
+
+
+
+fetch('/js/legend.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
+      response.json().then(function(data) {
+        lostSectors = data;
+        
+        todayDrop = dropList[getTodayId(dropList)]; // today's drop
+        todaySector = lostSectors[getTodayId(sectorList)].name; // name of today's lost sector
+        todaySectorId = getTodayId(sectorList); // id of today's lost sector
+
+        fillInfo();
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+

@@ -10,7 +10,7 @@
       {
         "name": "Unstoppable",
         "number": 3,
-        "desc": "Last champion spawns when you get closer to the cave barrier."
+        "desc": "Last champion spawns when you get closer to the cave barrier. Each spawn is accompanied by many Screebs."
       }
     ],
     "burn": "Arc",
