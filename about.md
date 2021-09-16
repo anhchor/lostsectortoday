@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+desc: 'The daily Legend (1320) Lost Sector in Destiny 2. Updated for Season 15: Season of the Lost.'
 ---
 
 
@@ -9,6 +10,8 @@ title: About
 Every day, a Lost Sector is set at Legend difficulty (1320) and another at Master difficulty (1350). They're highlighted on the map; you must first clear the LS normally on your current character, even if you cleared it on another character, before it shows up as available for Legend/Master.
 
 This site covers **Legend** Lost Sectors only.
+
+Daily reset is at 10:00 AM Pacific Time (UTC -7).
 
 
 ## Rewards

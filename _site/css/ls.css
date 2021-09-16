@@ -12,6 +12,9 @@
   --text-sub: #9cb7d6;
   --border: #637589;
 
+  --bg-alt: #00182e;
+  --text-alt: var(--text);
+
   /*--pink: #e23a98;
   --blue: #6BBBDA;*/
 
@@ -464,6 +467,11 @@ h3 {
 .day--disabled.day::before {
   opacity: .5;
 }
+.day--today {
+  background: var(--bg-alt);
+}
+
+
 
 .label {
   color: var(--complement);

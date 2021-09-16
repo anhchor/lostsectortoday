@@ -1,6 +1,6 @@
 const dropRotation = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorRotation = [
-  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion's Rest", 
+  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest", 
   "The Empty Tank",
   "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
   "Concealed Void", "Bunker E15", "Perdition"
@@ -8,7 +8,7 @@ const sectorRotation = [
 
 const sectorRotationSep = [
   "Concealed Void", "Bunker E15", "Perdition",
-  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion's Rest", 
+  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest", 
   "The Empty Tank", 
   "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation"
 ]
@@ -24,6 +24,12 @@ let sectorId = 0;
 let todayDrop;
 let todaySector;
 
+
+function toDays(x) {
+  x = x / 1000 / 60 / 60 / 24;
+  x = Math.floor(x + 1);
+  return x;
+}
 
 const getId = function(x) {
   let arrayId = 0;
@@ -91,6 +97,21 @@ function buildDay() {
 // }
 
 
+let sepStart = new Date(Date.UTC(2021, 8, 1, 17, 0, 0));
+let sepEnd = new Date(Date.UTC(2022, 9, 1, 17, 0, 0));
+
+let now = Date.now();
+let currentDayOfMonth = now - sepStart;
+
+function toDays(x) {
+  x = x / 1000 / 60 / 60 / 24;
+  x = Math.floor(x + 1);
+  return x;
+}
+
+currentDayOfMonth = Math.floor((currentDayOfMonth / 1000 / 60 / 60 / 24) + 1)
+
+
 function newDaySep() {
   currentDay = 1;
 
@@ -117,3 +138,8 @@ function newDaySep() {
 }
 
 newDaySep();
+
+
+const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
+today.classList.add('day--today');
+
