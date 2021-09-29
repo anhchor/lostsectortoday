@@ -377,6 +377,9 @@ h3 {
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 2px;
   }
+  .calendar--oct {
+    grid-template-rows: auto repeat(6, 1fr);
+  }
   .month-label {
     text-align: center;
   }

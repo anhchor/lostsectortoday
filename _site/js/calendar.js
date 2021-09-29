@@ -13,6 +13,15 @@ const sectorRotationSep = [
   "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation"
 ]
 
+const dropRotationOct = ["Legs", "Arms", "Chest", "Helmet"]
+const sectorRotationOct = [
+  "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
+  "Concealed Void", "Bunker E15", "Perdition",
+  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest", 
+  "The Empty Tank", 
+  "K1 Logistics"
+]
+
 
 
 
@@ -47,11 +56,15 @@ const getId = function(x) {
 }
 
 
-function cycle() {
+function cycleSep() {
   todayDrop = dropRotation[getId(dropRotation)];
   todaySector = sectorRotationSep[getId(sectorRotationSep)];
 }
 
+function cycleOct() {
+  todayDrop = dropRotationOct[getId(dropRotationOct)];
+  todaySector = sectorRotationOct[getId(sectorRotationOct)];
+}
 
 
 function toSlug(text) {
@@ -64,10 +77,10 @@ function toSlug(text) {
 
 
 
-let calendar = document.querySelector('.calendar');
+let calendarSep = document.querySelector('.calendar--sep');
+let calendarOct = document.querySelector('.calendar--oct');
 
-
-function buildDay() {
+function buildDay(month) {
   let todaySectorSlug = toSlug(todaySector);
 
   let day = document.createElement('li');
@@ -76,7 +89,7 @@ function buildDay() {
     <p class="ls-name"><a href="/sector/${todaySectorSlug}">${todaySector}</a></p>
     <p class="ls-drop">${todayDrop}</p>
   `;
-  calendar.appendChild(day);
+  month.appendChild(day);
 }
 
 
@@ -100,6 +113,9 @@ function buildDay() {
 let sepStart = new Date(Date.UTC(2021, 8, 1, 17, 0, 0));
 let sepEnd = new Date(Date.UTC(2022, 9, 1, 17, 0, 0));
 
+let octStart = new Date(Date.UTC(2021, 9, 1, 17, 0, 0));
+let octEnd = new Date(Date.UTC(2021, 10, 1, 17, 0, 0));
+
 let now = Date.now();
 let currentDayOfMonth = now - sepStart;
 
@@ -119,13 +135,13 @@ function newDaySep() {
     // greyed out days from august
     let day = document.createElement('li');
     day.classList.add('day', 'day--disabled');
-    calendar.appendChild(day);
+    calendarSep.appendChild(day);
   }
 
   for (i = 0; i < 32; i++) {
     // september
-    cycle();
-    buildDay();
+    cycleSep();
+    buildDay(calendarSep);
     currentDay += 1;
   }
 
@@ -133,12 +149,40 @@ function newDaySep() {
     // greyed out days from october
     let day = document.createElement('li');
     day.classList.add('day', 'day--disabled');
-    calendar.appendChild(day);
+    calendarSep.appendChild(day);
   }
 }
 
 newDaySep();
 
+
+
+function newDayOct() {
+  currentDay = 1;
+
+  for (i = 0; i < 5; i++) {
+    // 5 greyed out days from september
+    let day = document.createElement('li');
+    day.classList.add('day', 'day--disabled');
+    calendarOct.appendChild(day);
+  }
+
+  for (i = 0; i < 33; i++) {
+    // october
+    cycleOct();
+    buildDay(calendarOct);
+    currentDay += 1;
+  }
+
+  for (i = 0; i < 6; i++) {
+    // greyed out days from october
+    let day = document.createElement('li');
+    day.classList.add('day', 'day--disabled');
+    calendarOct.appendChild(day);
+  }
+}
+
+newDayOct();
 
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
