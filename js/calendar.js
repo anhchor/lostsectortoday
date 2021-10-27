@@ -22,6 +22,13 @@ const sectorRotationOct = [
   "K1 Logistics"
 ]
 
+const dropRotationNov = ["Helmet", "Legs", "Arms", "Chest"]
+const sectorRotationNov = [
+  "The Empty Tank", 
+  "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
+  "Concealed Void", "Bunker E15", "Perdition",
+  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest"
+]
 
 
 
@@ -66,6 +73,11 @@ function cycleOct() {
   todaySector = sectorRotationOct[getId(sectorRotationOct)];
 }
 
+function cycleNov() {
+  todayDrop = dropRotationNov[getId(dropRotationNov)];
+  todaySector = sectorRotationNov[getId(sectorRotationNov)];
+}
+
 
 function toSlug(text) {
   return text
@@ -79,6 +91,7 @@ function toSlug(text) {
 
 let calendarSep = document.querySelector('.calendar--sep');
 let calendarOct = document.querySelector('.calendar--oct');
+let calendarNov = document.querySelector('.calendar--nov');
 
 function buildDay(month) {
   let todaySectorSlug = toSlug(todaySector);
@@ -115,6 +128,11 @@ let sepEnd = new Date(Date.UTC(2022, 9, 1, 17, 0, 0));
 
 let octStart = new Date(Date.UTC(2021, 9, 1, 17, 0, 0));
 let octEnd = new Date(Date.UTC(2021, 10, 1, 17, 0, 0));
+
+let novStart = new Date(Date.UTC(2021, 10, 1, 17, 0, 0));
+let novEnd = new Date(Date.UTC(2021, 11, 1, 17, 0, 0));
+// fix for DST?
+
 
 let now = Date.now();
 let currentDayOfMonth = now - octStart;
@@ -175,7 +193,7 @@ function newDayOct() {
   }
 
   for (i = 0; i < 6; i++) {
-    // greyed out days from october
+    // greyed out days from nov
     let day = document.createElement('li');
     day.classList.add('day', 'day--disabled');
     calendarOct.appendChild(day);
@@ -183,6 +201,34 @@ function newDayOct() {
 }
 
 newDayOct();
+
+function newDayNov() {
+  currentDay = 1;
+
+  for (i = 0; i < 1; i++) {
+    // 1 greyed out day from october
+    let day = document.createElement('li');
+    day.classList.add('day', 'day--disabled');
+    calendarNov.appendChild(day);
+  }
+
+  for (i = 0; i < 32; i++) {
+    // november
+    cycleNov();
+    buildDay(calendarNov);
+    currentDay += 1;
+  }
+
+  for (i = 0; i < 4; i++) {
+    // greyed out days from dec
+    let day = document.createElement('li');
+    day.classList.add('day', 'day--disabled');
+    calendarNov.appendChild(day);
+  }
+}
+
+newDayNov();
+
 
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
