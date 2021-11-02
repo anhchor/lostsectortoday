@@ -135,7 +135,7 @@ let novEnd = new Date(Date.UTC(2021, 11, 1, 17, 0, 0));
 
 
 let now = Date.now();
-let currentDayOfMonth = now - octStart;
+let currentDayOfMonth = now - novStart;
 
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;
@@ -200,7 +200,7 @@ function newDayOct() {
   }
 }
 
-newDayOct();
+
 
 function newDayNov() {
   currentDay = 1;
