@@ -45,6 +45,8 @@ const getTodayId = function(x) {
     }
   }
   arrayId -= 1; // get zero-index
+  
+  console.log(arrayId);
   return arrayId;
 }
 
