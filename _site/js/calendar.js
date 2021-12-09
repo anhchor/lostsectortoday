@@ -83,7 +83,7 @@ let decEnd = new Date(Date.UTC(2021, 12, 1, 17, 0, 0));
 
 
 
-let currentDayOfMonth = now - novStart;
+let currentDayOfMonth = now - decStart;
 currentDayOfMonth = Math.floor((currentDayOfMonth / 1000 / 60 / 60 / 24) + 1)
 
 
@@ -111,7 +111,7 @@ function newDayNov() {
     calendarNov.appendChild(day);
   }
 }
-newDayNov();
+// newDayNov();
 
 
 function newDayDec() {
