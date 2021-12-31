@@ -5,7 +5,8 @@
     "champions": [
       {
         "name": "Overload",
-        "number": 3
+        "number": 3,
+        "desc": "One spawns outside the barrier; two spawn in the boss room."
       },
       {
         "name": "Unstoppable",
@@ -25,18 +26,13 @@
       {
         "name": "Raider Shield",
         "desc": "Scorn Raiders now have Void shields."
+      },
+      {
+        "name": "Chaff",
+        "desc": "Radar is disabled."
       }
     ],
-    "notes": "Lots of Screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter.",
-    "loadout": [
-      {
-        "kinetic": "The Time-worn Spire",
-        "energy": "Trinity Ghoul",
-        "power": "Sleepless",
-        "subclass": "Chaos Reach",
-        "exotic": "Geomag Stabilizers"
-      }
-    ]
+    "notes": "Lots of Screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter."
   },
   {
     "name": "Chamber of Starlight",
@@ -44,12 +40,13 @@
     "champions": [
       {
         "name": "Overload",
-        "number": 1,
-        "desc": "On far away platform and can be sniped at."
+        "number": 3,
+        "desc": "One in the first section, one on the far away platform and can be sniped at, and one in the final wave on that same platform."
       },
       {
         "name": "Unstoppable",
-        "number": 3
+        "number": 5,
+        "desc": "One in the first section, one in the next; three spawn together in the final wave."
       }
     ],
     "burn": "Solar",
@@ -61,26 +58,21 @@
       },
       {
         "name": "Solar",
-        "frequency": "few",
-        "desc": "A few Taken Knights."
+        "frequency": "2",
+        "desc": "Taken Knights."
       }
     ],
     "modifiers": [
       {
         "name": "Epitaph",
         "desc": "Taken combatants generate blight geysers when defeated."
+      },
+      {
+        "name": "Attrition",
+        "desc": "Regeneration is greatly impaired. Defeating enemies may create wells of Light."
       }
     ],
-    "notes": "Lots of Taken Acolytes and Thrall.",
-    "loadout": [
-      {
-        "kinetic": "Ignition Code",
-        "energy": "Le Monarque",
-        "power": "Corsair's Wrath",
-        "subclass": "Top-tree Dawnblade",
-        "exotic": "Sunbracers"
-      }
-    ]
+    "notes": "Lots of Taken Acolytes and Thrall."
   },
   {
     "name": "Aphelion’s Rest",
@@ -133,7 +125,7 @@
       {
         "name": "Overload",
         "number": 4,
-        "desc": "Fallen Captains. One in LS entrance before the first room; second one when you enter the first room, by the DJ console; third comes through the door when you activate the console; fourth spawns in boss room from the left door, after you kill the initial three enemies."
+        "desc": "Fallen Captains. One in LS entrance before the first room; second one when you enter the first room, by the DJ console; third comes through the door when you activate the console; fourth spawns in boss room from the left door, after you kill the initial enemies."
       },
       {
         "name": "Barrier",
@@ -146,25 +138,19 @@
       {
         "name": "Arc",
         "frequency": "2",
-        "desc": "Fallen Captains."
+        "desc": "Fallen Captains, when you first enter the boss room."
       }
     ],
     "modifiers": [
       {
         "name": "Arach-NO!",
         "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
+      },
+      { "name": "Chaff",
+        "desc": "Radar is disabled."
       }
     ],
-    "notes": "In the spooky hallway between the first and boss rooms, there are Thrall and Cabal dogs. The boss frequently turns invisible.",
-    "loadout": [
-      {
-        "kinetic": "Chroma Rush",
-        "energy": "Le Monarque",
-        "power": "Code Duello",
-        "subclass": "Well of Radiance",
-        "exotic": "Sunbracers"
-      }
-    ]
+    "notes": "In the spooky hallway between the first and boss rooms, there are Thrall and Cabal dogs. The boss frequently turns invisible."
   },
   {
     "name": "K1 Logistics",
@@ -173,12 +159,12 @@
       {
         "name": "Overload",
         "number": 6,
-        "desc": "Fallen Captains."
+        "desc": "Fallen Captains. One spawns in the boss area."
       },
       {
         "name": "Barrier",
         "number": 4,
-        "desc": "Barrier Servitors."
+        "desc": "Barrier Servitors. Two spawn in the boss area."
       }
     ],
     "burn": "Void",
@@ -204,16 +190,7 @@
         "desc": "Radar is disabled."
       }
     ],
-    "notes": "Servitor boss teleports twice at each 3rd of its health, starting from middle → left → right.",
-    "loadout": [
-      {
-        "kinetic": "Scathelocke",
-        "energy": "Ticuu's Divination",
-        "power": "Bad Omens",
-        "subclass": "Top-tree Nova Bomb",
-        "exotic": "Contraverse Hold"
-      }
-    ]
+    "notes": "Servitor boss teleports twice at each 3rd of its health, starting from middle → left → right."
   },
   {
     "name": "K1 Communion",
@@ -427,7 +404,7 @@
       },
       {
         "name": "Barrier",
-        "number": 2,
+        "number": 4,
         "desc": "Barrier Hobgoblins."
       }
     ],
@@ -448,17 +425,12 @@
       {
         "name": "Shocker",
         "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
+      },
+      {
+        "name": "Famine",
+        "desc": "Ammo reduced."
       }
     ],
-    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to kill it sooner rather than later. Boss can be melted with a super as soon as it spawns.",
-    "loadout": [
-      {
-        "kinetic": "Chroma Rush",
-        "energy": "Trinity Ghoul",
-        "power": "Sleepless",
-        "subclass": "Top-tree Nova Bomb",
-        "exotic": "Contraverse Hold"
-      }
-    ]
+    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to kill it sooner rather than later. Boss can be melted with a super as soon as it spawns."
   }
 ]

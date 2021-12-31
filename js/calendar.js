@@ -14,6 +14,17 @@ const sectorRotationDec = [
   "Concealed Void", "Bunker E15", "Perdition",
 ]
 
+const dropRotationJan = ["Legs", "Arms", "Chest", "Helmet"]
+const sectorRotationJan = [
+  "Bunker E15", "Perdition",
+  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest",
+  "The Empty Tank", 
+  "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
+  "Concealed Void"
+]
+
+
+
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;
   x = Math.floor(x + 1);

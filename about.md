@@ -11,7 +11,7 @@ Every day, a Lost Sector is set at Legend difficulty (1320) and another at Maste
 
 This site covers **Legend** Lost Sectors only.
 
-Daily reset is at 10:00 AM Pacific Time (UTC -7).
+Daily reset is at 9:00 AM Pacific Time (UTC -8).
 
 
 ## Rewards
@@ -27,7 +27,7 @@ Daily reset is at 10:00 AM Pacific Time (UTC -7).
 
 All Legend Lost Sectors have the following modifiers:
 
-- **Burn**: this element does 50% more damage, both from you and from enemies.
+- **Elemental Burn**: this element does 50% more damage, both from you and from enemies.
 - **Match Game**: enemy shields are very resistant to non-matching elemental damage.
 - **Locked Equipment**: you can't change your loadout once you begin.
 - **Limited Revives**: you start with a few revives; defeating a champion gets you +1 revive. You wipe when you die with no revives left. Revives no longer work after 15 minutes.

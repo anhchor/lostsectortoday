@@ -1,7 +1,7 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
   // Season 15 - Season of the Lost
-  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion's Rest", 
+  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest", 
   "The Empty Tank",
   "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
   "Concealed Void", "Bunker E15", "Perdition"
