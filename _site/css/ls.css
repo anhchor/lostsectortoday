@@ -374,9 +374,12 @@ h3 {
   .calendar {
     display: grid;
     grid-template-rows: auto 8em;
-    grid-auto-rows: 8em;
+    grid-auto-rows: minmax(8em, auto);
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 2px;
+  }
+  .calendar-title {
+    text-align: center;
   }
   .calendar--oct {
     grid-template-rows: auto repeat(6, 1fr);
@@ -395,12 +398,20 @@ h3 {
     font-size: .85em;
     margin: .25em 0 0;
   }
+  .page-footer {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 899px) {
   .day {
-    font-size: .85em;
-    padding: .5em;
+    font-size: 1em;
+    padding: .35em .5em .5em;
     border-bottom: 1px solid var(--border);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
   }
   .day-label {
     display: none;
@@ -411,7 +422,11 @@ h3 {
   }
   .ls-name,
   .ls-drop {
-    margin: 0 0 0 2.5em;
+    margin: 0 0 0 2.5rem;
+  }
+  .ls-drop {
+    font-size: .85em;
+    margin-top: .25em;
   }
   .ls-name {
     font-weight: bold;
@@ -429,7 +444,7 @@ h3 {
 .calendar-title {
   font-size: 1.2em;
   font-weight: normal;
-  text-align: center;
+  line-height: 1.25;
 
   margin: var(--sp) 1rem 0 1rem;
 }
@@ -498,6 +513,19 @@ h3 {
   color: var(--text);
 }
 
+
+
+
+
+.page-footer {
+  margin: var(--sp-lg) auto;
+
+  color: var(--text-sub);
+}
+.page-footer > p {
+  margin-left: var(--sp-edge);
+  margin-right: var(--sp-edge);
+}
 
 
 

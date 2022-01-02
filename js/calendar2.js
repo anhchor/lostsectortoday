@@ -41,9 +41,8 @@ function getId(day, list) {
 let dropId = 0; 
 let sectorId = 0;
 
-let decStart = new Date(Date.UTC(2021, 11, 1, 17, 0, 0));
-let decEnd = new Date(Date.UTC(2021, 12, 1, 17, 0, 0));
 
+let janStart = new Date(Date.UTC(2022, 0, 1, 17, 0, 0));
 
 const seasonLostStart = new Date(Date.UTC(2021, 7, 24, 17, 0, 0));
 const seasonLostEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
@@ -153,13 +152,13 @@ function buildCalendar(month) {
 }
 
 
-buildCalendar(dec);
 buildCalendar(jan);
+buildCalendar(feb);
 
 
 
 let now = Date.now();
-let currentDayOfMonth = toDays(now - decStart);
+let currentDayOfMonth = toDays(now - janStart);
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
 
