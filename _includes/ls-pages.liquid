@@ -25,7 +25,7 @@ eleventyComputed:
     {% for champions in legend.champions %}
       <li class="ls__champions-item">
         <h3 class="ls__champion">
-          {% include champions.liquid %}
+          {% include 'champions.liquid' %}
           {{ champions.name }} <span class="ls__champion-count">({{ champions.number }})</span>
         </h3>
         <p class="ls__champion-desc">{{ champions.desc }}</p>
@@ -34,7 +34,7 @@ eleventyComputed:
   </ul>
   
   <h2>Burn</h2>
-  <h3 class="ls__element">{% include burn.liquid %} {{ legend.burn }}</h3>
+  <h3 class="ls__element">{% include 'burn.liquid' %} {{ legend.burn }}</h3>
   <p class="ls__burn-desc">{{ legend.burnDesc }}</p>
  
   <h2>Shields</h2>
@@ -42,7 +42,7 @@ eleventyComputed:
     {% for shields in legend.shields %}
       <li class="ls__shields-item">
         <h3 class="ls__shield ls__element">
-          {% include shields.liquid %}
+          {% include 'shields.liquid' %}
         {{ shields.name }} <span class="ls__shields-count">({{ shields.frequency }})</span>
         </h3>
         <p class="ls__shields-desc">{{ shields.desc }}</p>

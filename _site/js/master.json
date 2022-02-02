@@ -288,34 +288,29 @@
       },
       {
         "name": "Barrier",
-        "number": 3,
-        "desc": "Knights. The last one will spawn alongside the boss."
+        "number": 7,
+        "desc": "Knights. Two will spawn alongside the boss."
       }
     ],
     "burn": "Void",
     "shields": [
       {
         "name": "Arc",
-        "frequency": "few",
-        "desc": "Arc knights."
+        "frequency": "1",
+        "desc": "Arc knight after you kill the boss."
       }
     ],
     "modifiers": [
       {
         "name": "Fire Pit",
         "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+      }, 
+      {
+        "name": "Chaff",
+        "desc": "Radar is disabled."
       }
     ],
-    "notes": "There's one Shrieker in the distance. Destroy the floating crystals to advance to the boss fight. Many ads still spawn after you defeat the boss, so getting to the chest without killing them is challenging.",
-    "loadout": [
-      {
-        "kinetic": "Chroma Rush",
-        "energy": "Lorentz Driver",
-        "power": "Bad Omens",
-        "subclass": "Top-tree Nova Bomb",
-        "exotic": "Contraverse Hold"
-      }
-    ]
+    "notes": "There's one Shrieker in the distance. Destroy the floating crystals to advance to the boss fight. Many ads still spawn after you defeat the boss, so getting to the chest without killing them is challenging."
   },
   {
     "name": "Concealed Void",

@@ -152,7 +152,6 @@ function buildCalendar(month) {
 }
 
 
-buildCalendar(jan);
 buildCalendar(feb);
 
 

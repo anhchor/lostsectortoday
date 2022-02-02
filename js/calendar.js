@@ -1,29 +1,11 @@
-const dropRotationNov = ["Helmet", "Legs", "Arms", "Chest"]
-const sectorRotationNov = [
-  "The Empty Tank", 
+const dropList = ["Chest", "Helmet", "Legs", "Arms"]
+const sectorList = [
+  // Season 15 - Season of the Lost
+  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest", 
+  "The Empty Tank",
   "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
-  "Concealed Void", "Bunker E15", "Perdition",
-  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest"
+  "Concealed Void", "Bunker E15", "Perdition"
 ]
-
-const dropRotationDec = ["Arms", "Chest", "Helmet", "Legs"]
-const sectorRotationDec = [
-  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest",
-  "The Empty Tank", 
-  "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
-  "Concealed Void", "Bunker E15", "Perdition",
-]
-
-const dropRotationJan = ["Legs", "Arms", "Chest", "Helmet"]
-const sectorRotationJan = [
-  "Bunker E15", "Perdition",
-  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest",
-  "The Empty Tank", 
-  "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
-  "Concealed Void"
-]
-
-
 
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;
@@ -39,9 +21,10 @@ function toSlug(text) {
     ;
 }
 
-function getId(list) {
+function getId(day, list) {
   let arrayId = 0;
-  for (i = 1; i <= currentDay; i++) {
+
+  for (i = 1; i <= day; i++) {
     if (i != arrayId) {
       if (arrayId < list.length) {
         arrayId += 1;
@@ -54,6 +37,37 @@ function getId(list) {
   return arrayId;
 }
 
+
+let dropId = 0; 
+let sectorId = 0;
+
+
+let febStart = new Date(Date.UTC(2022, 1, 1, 17, 0, 0));
+
+const seasonLostStart = new Date(Date.UTC(2021, 7, 24, 17, 0, 0));
+const seasonLostEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
+
+
+
+let todayDrop;
+let todaySector;
+
+
+function Month(days, before, after, start, end) {
+  this.days = days;
+  this.before = before;
+  this.after = after;
+  this.start = start;
+  this.end = end;
+}
+
+const dec = new Month(31, 3, 1, new Date(Date.UTC(2021, 11, 1, 17, 0, 0)), new Date(Date.UTC(2021, 12, 1, 17, 0, 0)));
+const jan = new Month(31, 6, 5, new Date(Date.UTC(2022, 0, 1, 17, 0, 0)), new Date(Date.UTC(2022, 1, 1, 17, 0, 0)));
+const feb = new Month(28, 2, 5, new Date(Date.UTC(2022, 1, 1, 17, 0, 0)), new Date(Date.UTC(2022, 2, 1, 17, 0, 0)));
+
+
+const main = document.querySelector('main');
+
 function buildDay(month) {
   let day = document.createElement('li');
   day.classList.add('day', 'day--active');
@@ -64,94 +78,86 @@ function buildDay(month) {
   month.appendChild(day);
 }
 
-let currentDay;
-
-let dropId = 0; 
-let sectorId = 0;
-
-let todayDrop;
-let todaySector;
-
-function cycleNov() {
-  todayDrop = dropRotationNov[getId(dropRotationNov)];
-  todaySector = sectorRotationNov[getId(sectorRotationNov)];
-}
-function cycleDec() {
-  todayDrop = dropRotationDec[getId(dropRotationDec)];
-  todaySector = sectorRotationDec[getId(sectorRotationDec)];
+function getSeasonDay(month) {
+  let seasonDay = month.start - seasonLostStart;
+  console.log(seasonDay);
 }
 
 
-let calendarNov = document.querySelector('.calendar--nov');
-let calendarDec = document.querySelector('.calendar--dec');
+function cycleId(id, list) {
+  if (id < (list.length - 1)) {
+    id += 1;
+  } else {
+    id = 0;
+  }
+  return id;
+}
+
+
+
+function buildCalendar(month) {
+  let monthName = month.start.toLocaleString('default', { month: 'long' });
+  let year = month.start.toLocaleString('default', { year: 'numeric' });
+  let firstDay = toDays(month.start - seasonLostStart);
+
+  let firstDaySectorId = getId(firstDay, sectorList);
+  let firstDayDropId = getId(firstDay, dropList);
+
+
+  let newMonth = document.createElement('section');
+  newMonth.classList.add('calendar-wrapper');
+  newMonth.innerHTML = `
+    <h2 class="month-label">${monthName} ${year}</h2>
+    <ol class="calendar calendar--${monthName}">
+      <li class="day-label">Sunday</li>
+      <li class="day-label">Monday</li>
+      <li class="day-label">Tuesday</li>
+      <li class="day-label">Wednesday</li>
+      <li class="day-label">Thursday</li>
+      <li class="day-label">Friday</li>
+      <li class="day-label">Saturday</li>
+    </ol> 
+  `;
+  main.appendChild(newMonth);
+  let newMonthCalendar = document.querySelector(`.calendar--${monthName}`);
+
+  for (i = 0; i < month.before; i++) {
+    let day = document.createElement('li');
+    day.classList.add('day', 'day--disabled');
+    newMonthCalendar.appendChild(day);
+  }
+
+  for (i = 0; i < month.days; i++) {
+
+    todayDrop = dropList[firstDayDropId];
+    todaySector = sectorList[firstDaySectorId];
+
+    let newDay = document.createElement('li');
+    newDay.classList.add('day', 'day--active');
+    newDay.innerHTML = `
+      <p class="ls-name"><a href="/sector/${toSlug(todaySector)}">${todaySector}</a></p>
+      <p class="ls-drop">${todayDrop}</p>
+    `;
+    newMonthCalendar.appendChild(newDay);
+
+    firstDayDropId = cycleId(firstDayDropId, dropList);
+    firstDaySectorId = cycleId(firstDaySectorId, sectorList);
+  }
+
+  for (i = 0; i < month.after; i++) {
+    let day = document.createElement('li');
+    day.classList.add('day', 'day--disabled');
+    newMonthCalendar.appendChild(day);
+  }
+}
+
+
+buildCalendar(feb);
+
+
 
 let now = Date.now();
-let novStart = new Date(Date.UTC(2021, 10, 1, 17, 0, 0));
-let novEnd = new Date(Date.UTC(2021, 11, 1, 17, 0, 0));
-
-let decStart = new Date(Date.UTC(2021, 11, 1, 17, 0, 0));
-let decEnd = new Date(Date.UTC(2021, 12, 1, 17, 0, 0));
-
-
-
-let currentDayOfMonth = now - decStart;
-currentDayOfMonth = Math.floor((currentDayOfMonth / 1000 / 60 / 60 / 24) + 1)
-
-
-function newDayNov() {
-  currentDay = 1;
-
-  for (i = 0; i < 1; i++) {
-    // 1 greyed out day from october
-    let day = document.createElement('li');
-    day.classList.add('day', 'day--disabled');
-    calendarNov.appendChild(day);
-  }
-
-  for (i = 0; i < 32; i++) {
-    // november
-    cycleNov();
-    buildDay(calendarNov);
-    currentDay += 1;
-  }
-
-  for (i = 0; i < 4; i++) {
-    // greyed out days from december
-    let day = document.createElement('li');
-    day.classList.add('day', 'day--disabled');
-    calendarNov.appendChild(day);
-  }
-}
-// newDayNov();
-
-
-function newDayDec() {
-  currentDay = 1;
-
-  for (i = 0; i < 3; i++) {
-    // 3 greyed out days from november
-    let day = document.createElement('li');
-    day.classList.add('day', 'day--disabled');
-    calendarDec.appendChild(day);
-  }
-
-  for (i = 0; i < 33; i++) {
-    // november
-    cycleDec();
-    buildDay(calendarDec);
-    currentDay += 1;
-  }
-
-  for (i = 0; i < 1; i++) {
-    // greyed out days from jan
-    let day = document.createElement('li');
-    day.classList.add('day', 'day--disabled');
-    calendarDec.appendChild(day);
-  }
-}
-newDayDec();
-
-
+let currentDayOfMonth = toDays(now - febStart);
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
 

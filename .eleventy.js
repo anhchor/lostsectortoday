@@ -1,4 +1,6 @@
+
 module.exports = function(eleventyConfig) {
+
 
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('svg');
@@ -8,9 +10,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('filters');
 
 
-  eleventyConfig.addFilter('rotatePost', function() {
-    return 'testing!';
-  });
 
   eleventyConfig.addCollection('daily', function(collection) {
     var postCollection = collection.getAll()[0].data.legend;
