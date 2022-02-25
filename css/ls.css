@@ -508,6 +508,14 @@ h3 {
   .day--disabled.day::before {
     content: none;
   }
+  
+  /* delete this later lol*/
+  .day--last {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+
 }
 
 .calendar-title {
@@ -563,8 +571,9 @@ h3 {
   opacity: .5;
 }
 .day--today {
-  background: var(--bg-alt);
+  background: #082141;
 }
+
 
 
 

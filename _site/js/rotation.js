@@ -1,19 +1,21 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
-  // Season 15 - Season of the Lost
-  "Bay of Drowned Wishes", "Chamber of Starlight", "Aphelion’s Rest", 
-  "The Empty Tank",
-  "K1 Logistics", "K1 Communion", "K1 Crew Quarters", "K1 Revelation",
-  "Concealed Void", "Bunker E15", "Perdition"
+  // Season 16 - Season of the Risen
+  "Exodus Garden 2A",
+  "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight"
 ]
 
+// feb 23: exodus garden 2a, helmet
 
 
 let seasonLostStart = new Date(Date.UTC(2021, 7, 24, 17, 0, 0));
 let seasonLostEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
 
+let seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
+let seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 18, 0, 0));
+
 let now = Date.now();
-let currentDayOfSeason = now - seasonLostStart;
+let currentDayOfSeason = now - seasonRisenStart;
 
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;

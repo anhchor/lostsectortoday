@@ -5,7 +5,8 @@
     "champions": [
       {
         "name": "Overload",
-        "number": 2
+        "number": 2,
+        "desc": "One outside of the cave barrier, and one on the far platform in the boss room."
       },
       {
         "name": "Unstoppable",
@@ -447,15 +448,6 @@
         "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
       }
     ],
-    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to kill it sooner rather than later. Boss can be melted with a super as soon as it spawns.",
-    "loadout": [
-      {
-        "kinetic": "Chroma Rush",
-        "energy": "Trinity Ghoul",
-        "power": "Sleepless",
-        "subclass": "Top-tree Nova Bomb",
-        "exotic": "Contraverse Hold"
-      }
-    ]
+    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to kill it sooner rather than later. Boss can be melted with a super as soon as it spawns."
   }
 ]
