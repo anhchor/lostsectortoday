@@ -1,3 +1,3 @@
 ---
-layout: ls-pages
+layout: ls
 ---

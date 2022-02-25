@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Exodus Garden 2A",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2
+      },
+      {
+        "name": "Barrier",
+        "number": 2,
+        "desc": "?"
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 1,
+        "desc": "Servitors. Number??"
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Raider Shield",
+        "desc": "???"
+      }
+    ],
+    "notes": "You can melt the boss and skip the ads in the final room."
+  },
+  {
+    "name": "Veles Labyrinth",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 2,
+        "desc": ""
+      },
+      {
+        "name": "Unstoppable",
+        "number": 1,
+        "desc": ""
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "?",
+        "desc": ""
+      },
+      {
+        "name": "Solar",
+        "frequency": "?",
+        "desc": ""
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "?",
+        "desc": ""
+      }
+    ],
+    "notes": "??"
+  }
+]
