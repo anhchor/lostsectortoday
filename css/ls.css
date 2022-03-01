@@ -113,6 +113,32 @@ img {
   margin-right: .75em;
 } 
 
+
+.page-content > ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  counter-reset: number;
+}
+.page-content > ol > li {
+  margin-left: 2em;
+  margin-bottom: .15em;
+  
+  position: relative;
+}
+.page-content > ol > li:before {
+  counter-increment: number;
+  color: var(--complement);
+  content: counter(number)'.';
+  font-weight: bold;
+
+  position: absolute;
+  left: -1.5em;
+  /* margin-left: -1.25em;
+  margin-right: .75em; */
+} 
+
 .page-content {
   margin-bottom: var(--sp-lg);
 }

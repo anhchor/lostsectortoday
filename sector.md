@@ -1,3 +1,3 @@
 ---
-layout: ls
+layout: sector
 ---

@@ -9,7 +9,7 @@ _Note: this site has not yet been fully updated for changes in the Witch Queen._
 
 ## Lost Sectors Overview 
 
-Every day, a Lost Sector is set at Legend difficulty (1550) and another at Master difficulty (1580). They're highlighted on the map; you must first clear the LS normally on your current character, even if you cleared it on another character, before it shows up as available for Legend/Master.
+Every day, a Lost Sector is available at Legend (1550) and Master (1580) difficulty. It's highlighted on the map; you must first clear the LS normally on your current character, even if you cleared it on another character, before it shows up as available for Legend/Master.
 
 This site currently covers **Legend** Lost Sectors only.
 

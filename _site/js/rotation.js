@@ -1,8 +1,9 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
   // Season 16 - Season of the Risen
-  "Exodus Garden 2A",
-  "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight"
+  "Veles Labyrinth", "Exodus Garden 2A",
+  "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight",
+  "K1 Revelation", "K1 Crew Quarters"
 ]
 
 // feb 23: exodus garden 2a, helmet

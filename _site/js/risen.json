@@ -1,35 +1,5 @@
 [
   {
-    "name": "Exodus Garden 2A",
-    "location": "The Cosmodrome",
-    "champions": [
-      {
-        "name": "Overload",
-        "number": 2
-      },
-      {
-        "name": "Barrier",
-        "number": 2,
-        "desc": "?"
-      }
-    ],
-    "burn": "Void",
-    "shields": [
-      {
-        "name": "Void",
-        "frequency": 1,
-        "desc": "Servitors. Number??"
-      }
-    ],
-    "modifiers": [
-      {
-        "name": "Raider Shield",
-        "desc": "???"
-      }
-    ],
-    "notes": "You can melt the boss and skip the ads in the final room."
-  },
-  {
     "name": "Veles Labyrinth",
     "location": "The Cosmodrome",
     "champions": [
@@ -64,5 +34,132 @@
       }
     ],
     "notes": "??"
+  },
+  {
+    "name": "Exodus Garden 2A",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2
+      },
+      {
+        "name": "Barrier",
+        "number": 2,
+        "desc": "?"
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 1,
+        "desc": "Servitors. Number??"
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "?",
+        "desc": "???"
+      }
+    ],
+    "notes": "Boss is a big floating servitor. You can melt it and skip the ads in the final room."
+  },
+  {
+    "name": "Aphelion’s Rest",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Appear on far away platforms, and often move behind cover."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2
+      }
+    ],
+    "burn": "Stasis",
+    "burnDesc": "Taken Acolytes and Boss have Stasis weapons that slow and freeze you.",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "many",
+        "desc": "Taken Acolytes all have Void shields."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Epitaph",
+        "desc": "Taken combatants generate blight geysers when defeated."
+      }
+    ],
+    "notes": "Taken Psions duplicate frequently and quickly. Lots of Stasis AOE damage in the boss area."
+  },
+  {
+    "name": "Bay of Drowned Wishes",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "One outside of the cave barrier, and one on the far platform in the boss room."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3,
+        "desc": "Last champion spawns when you get closer to the cave barrier. Each spawn is accompanied by many Screebs."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 1,
+        "desc": "One Scorn Raider on a far away platform."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Raider Shield",
+        "desc": "Scorn Raiders now have Void shields."
+      }
+    ],
+    "notes": "Lots of Screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter."
+  }, 
+  {
+    "name": "Chamber of Starlight",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 1,
+        "desc": "On far away platform and can be sniped at."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "many",
+        "desc": "Taken Acolytes all have Void shields. Wizard Boss has Void shield."
+      },
+      {
+        "name": "Solar",
+        "frequency": "2",
+        "desc": "Taken Knights."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Epitaph",
+        "desc": "Taken combatants generate blight geysers when defeated."
+      }
+    ],
+    "notes": "Lots of Taken Acolytes and Thrall."
   }
 ]

@@ -2,8 +2,8 @@ const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
   // Season 15 - Season of the Lost
   "Veles Labyrinth", "Exodus Garden 2A",
-  "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight?",
-  "???", "???"
+  "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight",
+  "K1 Revelation", "K1 Crew Quarters"
 ]
 
 function toDays(x) {
