@@ -161,5 +161,39 @@
       }
     ],
     "notes": "Lots of Taken Acolytes and Thrall."
+  },
+  {
+    "name": "Metamorphosis",
+    "location": "Savathȗn’s Throne World",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 3,
+        "desc": "Scorn Chieftains. Two in the first room, one in the second. They throw lots of totems."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2,
+        "desc": "One in the second room, another in the boss room."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "2"
+      },
+      {
+        "name": "Solar",
+        "frequency": "1"
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
+      }
+    ],
+    "notes": "Destroy the three crystals at the end of each room to take down the enemy's immune shield."
   }
 ]

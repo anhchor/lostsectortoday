@@ -1,9 +1,10 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
-  // Season 15 - Season of the Lost
+  // Season 16 - Season of the Risen
   "Veles Labyrinth", "Exodus Garden 2A",
   "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight",
-  "K1 Revelation", "K1 Crew Quarters"
+  "K1 Revelation", "K1 Crew Quarters", "K1 Logistics",
+  "Metamorphosis", "Throne World?", "Throne World?"
 ]
 
 function toDays(x) {
@@ -42,6 +43,8 @@ let sectorId = 0;
 
 
 let febStart = new Date(Date.UTC(2022, 1, 1, 17, 0, 0));
+
+let marStart = new Date(Date.UTC(2022, 2, 1, 17, 0, 0));
 
 const seasonLostStart = new Date(Date.UTC(2021, 7, 24, 17, 0, 0));
 const seasonLostEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
@@ -199,6 +202,7 @@ function buildCalendar(month) {
     let newDay = document.createElement('li');
     newDay.classList.add('day', 'day--active');
     newDay.innerHTML = `
+      <p class="ls-name"><a href="/sector/${toSlug(todaySector)}">${todaySector}</a></p>
       <p class="ls-drop">${todayDrop}</p>
     `;
     newMonthCalendar.appendChild(newDay);
@@ -215,14 +219,14 @@ function buildCalendar(month) {
 }
 
 
-buildInterimCalendar(feb);
+// buildInterimCalendar(feb);
 buildCalendar(mar);
 
 
 
 
 let now = Date.now();
-let currentDayOfMonth = toDays(now - febStart);
+let currentDayOfMonth = toDays(now - marStart);
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
 

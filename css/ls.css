@@ -473,7 +473,8 @@ h3 {
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 2px;
   }
-  .calendar-title {
+  .calendar-title,
+  .calendar-desc {
     text-align: center;
   }
   .calendar--oct {
@@ -550,6 +551,11 @@ h3 {
   line-height: 1.25;
 
   margin: var(--sp) 1rem 0 1rem;
+}
+.calendar-desc {
+  color: var(--text-sub);
+  font-size: var(--font-size-sm);
+  margin: .25rem 1rem 0;
 }
 
 .calendar-wrapper {
