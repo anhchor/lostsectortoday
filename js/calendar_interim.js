@@ -4,7 +4,7 @@ const sectorList = [
   "Veles Labyrinth", "Exodus Garden 2A",
   "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight",
   "K1 Revelation", "K1 Crew Quarters", "K1 Logistics",
-  "Metamorphosis", "Throne World?", "Throne World?"
+  "Metamorphosis", "Sepulcher", "Extraction"
 ]
 
 function toDays(x) {

@@ -195,5 +195,41 @@
       }
     ],
     "notes": "Destroy the three crystals at the end of each room to take down the enemy's immune shield."
+  },
+  {
+    "name": "Sepulcher",
+    "location": "Savathȗn’s Throne World",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier knights. One in the first room, one in the hallway after the first room, and one in the boss room. The second one can run to the next room; recommended to kill it quickly before it does."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 1,
+        "desc": "Unstoppable ogre in the second room."
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "few",
+        "desc": "Arc knights."
+      },
+      {
+        "name": "Solar",
+        "frequency": "1",
+        "desc": "Solar wizard in the first room."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+      }
+    ],
+    "notes": "Two Hive Guardians: one in the first room, and another in the second."
   }
 ]
