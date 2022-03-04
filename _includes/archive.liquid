@@ -1,0 +1,57 @@
+---
+layout: layout
+---
+
+<main class="ls-container">
+
+<h1 class="page-title">{{ title }}</h1>
+
+{{ content }}
+
+<h2>Season of the Risen</h2>
+
+<p>Season 16 (August 24, 2021 – February 22, 2022)</p>
+
+<ul class="ls-list">
+{% for risen in risen %}
+  <li><a href="/sector/{{ risen.name | slug }}">{{ risen.name }}</a> ({{ risen.location }})</li>
+{% endfor %}
+</ul>
+
+
+<hr>
+
+<h2>Season of the Lost</h2>
+
+<p>Season 15 (August 24, 2021 – February 22, 2022)</p>
+
+<ul class="ls-list">
+{% for legend in legend %}
+  <li><a href="/sector/{{ legend.name | slug }}">{{ legend.name }}</a> ({{ legend.location }})</li>
+{% endfor %}
+</ul>
+
+
+<hr>
+
+<h2>Season of the Splicer</h2>
+
+<p>Season 14 (May 11, 2021 – August 24, 2021)</p>
+
+<ul class="ls-list">
+  <li>The Quarry (The EDZ)</li>
+  <li>Scavenger’s Den (The EDZ)</li>
+  <li>Excavation Site XII (The EDZ)</li>
+  <li>Exodus Garden 2A (The Cosmodrome)</li>
+  <li>Veles Labyrinth (The Cosmodrome)</li>
+  <li>Concealed Void (Europa)</li>
+  <li>Bunker E15 (Europa)</li>
+  <li>Perdition (Europa)</li>
+  <li>K1 Logistics (The Moon)</li>
+  <li>K1 Communion (The Moon)</li>
+  <li>K1 Crew Quarters (The Moon)</li>
+  <li>K1 Revelation (The Moon)</li>
+</ul>
+
+
+</main>

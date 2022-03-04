@@ -163,6 +163,104 @@
     "notes": "Lots of Taken Acolytes and Thrall."
   },
   {
+    "name": "K1 Revelation",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Unstoppable",
+        "number": 3,
+        "desc": "Ogres that spawn at the three crystals."
+      },
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Knights. The last one will spawn alongside the boss."
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "few",
+        "desc": "Arc knights."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+      }
+    ],
+    "notes": "There's one Shrieker in the distance. Destroy the floating crystals to advance to the boss fight. Many ads still spawn after you defeat the boss, so getting to the chest without killing them is challenging."
+  },
+  {
+    "name": "K1 Crew Quarters",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Fallen Captains."
+      },
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Servitors. Last Barrier Servitor spawns when the boss is at 50% health."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Solar",
+        "frequency": "many",
+        "desc": "Shanks have solar shields."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Hot Knife",
+        "desc": "Shanks now have Solar shields."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "name": "K1 Logistics",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Fallen Captains."
+      },
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Servitors."
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Solar",
+        "frequency": "many",
+        "desc": "Shanks have Solar shields."
+      },
+      {
+        "name": "Arc",
+        "frequency": "few",
+        "desc": "Fallen Captains have Arc shields. There's one in the first area and a few in the boss area."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Hot Knife",
+        "desc": "Shanks now have Solar shields."
+      }
+    ],
+    "notes": "Servitor boss teleports twice at each 3rd of its health, starting from middle → left → right."
+  },
+  {
     "name": "Metamorphosis",
     "location": "Savathȗn’s Throne World",
     "champions": [
@@ -203,12 +301,12 @@
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "Barrier knights. One in the first room, one in the hallway after the first room, and one in the boss room. The second one can run to the next room; recommended to kill it quickly before it does."
+        "desc": "Barrier Knights. One in the first room, one in the hallway after the first room, and one in the boss room. The second one can run to the next room; recommended to kill it quickly before it does."
       },
       {
         "name": "Unstoppable",
         "number": 1,
-        "desc": "Unstoppable ogre in the second room."
+        "desc": "Unstoppable Ogre in the second room."
       }
     ],
     "burn": "Solar",
@@ -216,12 +314,12 @@
       {
         "name": "Arc",
         "frequency": "few",
-        "desc": "Arc knights."
+        "desc": "Arc Knights."
       },
       {
         "name": "Solar",
         "frequency": "1",
-        "desc": "Solar wizard in the first room."
+        "desc": "Solar Wizard in the first room."
       }
     ],
     "modifiers": [
@@ -231,5 +329,41 @@
       }
     ],
     "notes": "Two Hive Guardians: one in the first room, and another in the second."
+  },
+  {
+    "name": "Extraction",
+    "location": "Savathȗn’s Throne World",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 1,
+        "desc": "Scorn Chieftain in the first room."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2,
+        "desc": "Unstoppable Ogre. One in the plates room, and one in the boss room."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "many",
+        "desc": "Arc Knights throughout."
+      },
+      {
+        "name": "Void",
+        "frequency": "few",
+        "desc": "Scorn Raiders in the first room."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Raider Shield",
+        "desc": "Scorn Raiders now have Void shields."
+      }
+    ],
+    "notes": "Many ads spawn during the plate capturing. Final boss is a Hive Guardian wizard."
   }
 ]

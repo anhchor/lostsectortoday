@@ -10,7 +10,7 @@
   --bg: #02070c;
   --text: #dbe1e8;
   --text-sub: #9cb7d6;
-  --border: #637589;
+  --border: #223b57;
 
   --bg-alt: #171f36;
   --text-alt: var(--text);
@@ -81,7 +81,7 @@ body {
   background-color: #113558;
 }
 a {
-  color: var(--complement);
+  color: var(--text-sub);
 }
 h1 {
   font-family: var(--font-heading);
@@ -89,7 +89,35 @@ h1 {
 img {
   max-width: 100%;
 }
+hr {
+  border: none;
+  outline: none;
+  height: 7px;
+  position: relative;
+  max-width: var(--width-content);
+  margin-top: var(--sp-lg);
+  margin-left: 0;
+  margin-right: 0;
 
+  background-image: url('/img/sparkles.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+hr::before,
+hr::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  background-color: var(--border);
+  width: calc(50% - 50px);
+  height: 1px;
+}
+hr::before {
+  left: 0;
+}
+hr::after {
+  right: 0;
+}
 
 
 

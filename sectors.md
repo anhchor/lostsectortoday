@@ -1,8 +1,8 @@
 ---
 layout: sector-list
-title: Season 15 Lost Sectors
-desc: 'List of all Lost Sectors in rotation for Season 15: Season of the Lost.'
+title: Season 16 Lost Sectors
+desc: 'List of all Lost Sectors in rotation for Season 16: Season of the Risen.'
 ---
 
-Season of the Lost (August 24, 2021 – February 21, 2022)
+Season of the Risen (February 22, 2022 – May 24, 2022)
  
