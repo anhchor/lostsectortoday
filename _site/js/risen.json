@@ -5,35 +5,35 @@
     "champions": [
       {
         "name": "Barrier",
-        "number": 2,
-        "desc": ""
+        "number": 3,
+        "desc": "Barrier Knights. First one in one of the Hive rooms, second one in the hallway before the main area, and third one on the upstairs platform."
       },
       {
         "name": "Unstoppable",
         "number": 1,
-        "desc": ""
+        "desc": "Unstoppable Ogre, across the gap in the main area."
       }
     ],
     "burn": "Arc",
     "shields": [
       {
         "name": "Arc",
-        "frequency": "?",
-        "desc": ""
+        "frequency": "many",
+        "desc": "Arc Knights."
       },
       {
         "name": "Solar",
-        "frequency": "?",
-        "desc": ""
+        "frequency": "few",
+        "desc": "Solar wizards."
       }
     ],
     "modifiers": [
       {
-        "name": "?",
-        "desc": ""
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
       }
     ],
-    "notes": "??"
+    "notes": "You have to shoot three runes in the first section in order to progress to the main room. There are a number of spawns in the boss area before the boss appears."
   },
   {
     "name": "Exodus Garden 2A",
@@ -41,29 +41,30 @@
     "champions": [
       {
         "name": "Overload",
-        "number": 2
+        "number": 2,
+        "desc": "Overload Captains."
       },
       {
         "name": "Barrier",
         "number": 2,
-        "desc": "?"
+        "desc": "Barrier Servitors"
       }
     ],
     "burn": "Void",
     "shields": [
       {
         "name": "Void",
-        "frequency": 1,
-        "desc": "Servitors. Number??"
+        "frequency": "few",
+        "desc": "Servitors."
       }
     ],
     "modifiers": [
       {
-        "name": "?",
-        "desc": "???"
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
       }
     ],
-    "notes": "Boss is a big floating servitor. You can melt it and skip the ads in the final room."
+    "notes": "Boss is a big floating Servitor. You can melt it and skip the ads in the final room."
   },
   {
     "name": "Aphelion’s Rest",
