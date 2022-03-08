@@ -204,6 +204,7 @@ hr::after {
   }
   .header__title {
     flex: 1 0 90%;
+    margin-bottom: .25em;
   }
   .site-nav__item {
     margin-right: 1em;
@@ -511,10 +512,11 @@ h3 {
     text-align: center;
   }
   .day {
-    padding: 1em;  
+    padding: clamp(.5em, 1em, 1vw);
     border: 1px solid var(--border);
   }
   .ls-name {
+    font-size: clamp(.85em, 1em, 1vw);
     margin: .5em 0 0;
   }
   .ls-drop {
@@ -528,7 +530,7 @@ h3 {
 @media screen and (max-width: 899px) {
   .day {
     font-size: 1em;
-    padding: .35em .5em .5em;
+    padding: .35em 1em .5em;
     border-bottom: 1px solid var(--border);
 
     display: flex;
@@ -541,18 +543,16 @@ h3 {
   }
   .day::before {
     position: absolute;
-    left: 1em;
+    left: 1rem;
   }
-  .ls-name,
-  .ls-drop {
-    margin: 0 0 0 2.5rem;
+  .ls-name {
+    margin: 0 0 0 2rem;
+    font-weight: bold;
+
   }
   .ls-drop {
     font-size: .85em;
-    margin-top: .25em;
-  }
-  .ls-name {
-    font-weight: bold;
+    margin: .25em 0 0 2rem;
   }
   .day--disabled {
     height: 0!important;
@@ -597,12 +597,13 @@ h3 {
   font-size: var(--font-size-lg);
   color: var(--accent);
   line-height: 1.15;
-  margin: 1rem;
+  margin: .5rem 1rem 1rem;
 }
 .calendar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 2px;
+  box-sizing: border-box;
 
   counter-reset: dayCounter;
 }
@@ -642,12 +643,16 @@ h3 {
   margin: 0;
 }
 
-.ls-name {
+.ls-name { 
   font-weight: bold;
   line-height: 1.25;
+  /* word-break: break-word; */
 }
 .ls-name > a {
   color: var(--text);
+}
+.ls-drop {
+  color: var(--text-sub);
 }
 
 
