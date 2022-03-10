@@ -3,11 +3,9 @@ const sectorList = [
   // Season 16 - Season of the Risen
   "Veles Labyrinth", "Exodus Garden 2A",
   "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight",
-  "K1 Revelation", "K1 Crew Quarters"
+  "K1 Revelation", "K1 Crew Quarters", "K1 Logistics",
+  "Metamorphosis", "Sepulcher", "Extraction"
 ]
-
-// feb 23: exodus garden 2a, helmet
-
 
 let seasonLostStart = new Date(Date.UTC(2021, 7, 24, 17, 0, 0));
 let seasonLostEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
@@ -49,7 +47,6 @@ const getTodayId = function(x) {
   }
   arrayId -= 1; // get zero-index
   
-  console.log(arrayId);
   return arrayId;
 }
 
@@ -100,7 +97,7 @@ function fillInfo() {
 
 
 
-fetch('/js/legend.json')
+fetch('/js/risen.json')
   .then(
     function(response) {
       if (response.status !== 200) {
