@@ -10,7 +10,7 @@ Every day, a Lost Sector is available at Legend (1550) and Master (1580) difficu
 
 This site currently covers details for **Legend** Lost Sectors only.
 
-Daily reset is at 9:00 AM Pacific Time (UTC -8).
+Daily reset is at 10:00 AM Pacific Time (UTC -7).
 
 
 ## Rewards

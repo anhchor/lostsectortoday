@@ -7,11 +7,9 @@ const sectorList = [
   "Metamorphosis", "Sepulcher", "Extraction"
 ]
 
-let seasonLostStart = new Date(Date.UTC(2021, 7, 24, 17, 0, 0));
-let seasonLostEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
 
-let seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
-let seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 18, 0, 0));
+let seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
+let seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
 
 let now = Date.now();
 let currentDayOfSeason = now - seasonRisenStart;
