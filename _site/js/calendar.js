@@ -43,6 +43,7 @@ let sectorId = 0;
 
 
 let marStart = new Date(Date.UTC(2022, 2, 1, 17, 0, 0));
+let aprStart = new Date(Date.UTC(2022, 3, 1, 17, 0, 0));
 const seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
 const seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
 
@@ -58,6 +59,7 @@ function Month(days, before, after, start, end) {
 }
 
 const mar = new Month(31, 2, 2, new Date(Date.UTC(2022, 2, 1, 17, 0, 0)), new Date(Date.UTC(2022, 3, 1, 17, 0, 0)));
+const apr = new Month(30, 5, 0, new Date(Date.UTC(2022, 3, 1, 17, 0, 0)), new Date(Date.UTC(2022, 4, 1, 17, 0, 0)));
 
 
 const main = document.querySelector('main');
@@ -146,10 +148,10 @@ function buildCalendar(month) {
 }
 
 
-buildCalendar(mar);
+buildCalendar(apr);
 
 let now = Date.now();
-let currentDayOfMonth = toDays(now - marStart);
+let currentDayOfMonth = toDays(now - aprStart);
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
 

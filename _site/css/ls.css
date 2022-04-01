@@ -671,3 +671,13 @@ h3 {
 
 
 
+
+
+.build {
+  border-collapse: collapse;
+}
+.build th,
+.build td {
+  padding: .5em 1em;
+  border: 1px solid var(--border);
+}
