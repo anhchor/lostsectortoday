@@ -6,7 +6,7 @@ desc: 'The daily Legend/Master Lost Sectors in Destiny 2. Updated for Season 16:
 
 ## Lost Sectors Overview 
 
-Every day, a Lost Sector is available at Legend (1550) and Master (1580) difficulty. It's highlighted on the map; you must first clear the LS normally on your current character, even if you cleared it on another character, before it shows up as available for Legend/Master.
+Every day, a Lost Sector is available at Legend (1560) and Master (1590) difficulty. It's highlighted on the map; you must first clear the LS normally on your current character, even if you cleared it on another character, before it shows up as available for Legend/Master.
 
 This site currently covers details for **Legend** Lost Sectors only.
 
