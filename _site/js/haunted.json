@@ -1,0 +1,415 @@
+[
+  {
+    "name": "Veles Labyrinth",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Knights. First one in one of the Hive rooms, second one in the hallway before the main area, and third one on the upstairs platform."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 1,
+        "desc": "Unstoppable Ogre, across the gap in the main area."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "many",
+        "desc": "Arc Knights."
+      },
+      {
+        "name": "Solar",
+        "frequency": "few",
+        "desc": "Solar wizards."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+      }
+    ],
+    "notes": "You have to shoot three runes in the first section in order to progress to the main room. There are a number of spawns in the boss area before the boss appears."
+  },
+  {
+    "name": "Exodus Garden 2A",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Overload Captains."
+      },
+      {
+        "name": "Barrier",
+        "number": 2,
+        "desc": "Barrier Servitors"
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "few",
+        "desc": "Servitors."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
+      }
+    ],
+    "notes": "Boss is a big floating Servitor. You can melt it and skip the ads in the final room."
+  },
+  {
+    "name": "Aphelion’s Rest",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Appear on far away platforms, and often move behind cover."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2
+      }
+    ],
+    "burn": "Stasis",
+    "burnDesc": "Taken Acolytes and Boss have Stasis weapons that slow and freeze you.",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "many",
+        "desc": "Taken Acolytes all have Void shields."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Epitaph",
+        "desc": "Taken combatants generate blight geysers when defeated."
+      }
+    ],
+    "notes": "Taken Psions duplicate frequently and quickly. Lots of Stasis AOE damage in the boss area."
+  },
+  {
+    "name": "Bay of Drowned Wishes",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "One outside of the cave barrier, and one on the far platform in the boss room."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3,
+        "desc": "Last champion spawns when you get closer to the cave barrier. Each spawn is accompanied by many Screebs."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 1,
+        "desc": "One Scorn Raider on a far away platform."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Raider Shield",
+        "desc": "Scorn Raiders now have Void shields."
+      }
+    ],
+    "notes": "Lots of Screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter."
+  }, 
+  {
+    "name": "Chamber of Starlight",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 1,
+        "desc": "On far away platform and can be sniped at."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "many",
+        "desc": "Taken Acolytes all have Void shields. Wizard Boss has Void shield."
+      },
+      {
+        "name": "Solar",
+        "frequency": "2",
+        "desc": "Taken Knights."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Epitaph",
+        "desc": "Taken combatants generate blight geysers when defeated."
+      }
+    ],
+    "notes": "Lots of Taken Acolytes and Thrall."
+  },
+  {
+    "name": "K1 Revelation",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Unstoppable",
+        "number": 3,
+        "desc": "Ogres that spawn at the three crystals."
+      },
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Knights. The last one will spawn alongside the boss."
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "few",
+        "desc": "Arc knights."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+      }
+    ],
+    "notes": "There's one Shrieker in the distance. Destroy the floating crystals to advance to the boss fight. Many ads still spawn after you defeat the boss, so getting to the chest without killing them is challenging."
+  },
+  {
+    "name": "K1 Communion",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Fallen captains."
+      },
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Servitors. Final Barrier Servitor doesn't spawn in the boss room if you kill the boss fast enough."
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Solar",
+        "frequency": 1,
+        "desc": "Heavy Shank in boss room."
+      },
+      {
+        "name": "Void",
+        "frequency": "few",
+        "desc": "A few Void Servitors."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Arach-NO!",
+        "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
+      }
+    ],
+    "notes": "Boss appears after you kill the ads and Heavy Shank. You can prevent the third Barrier Servitor and a wave of Exploder Shanks from spawning if you kill the boss fast enough.",
+    "loadout": [
+      {
+        "kinetic": "Chroma Rush",
+        "energy": "Riskrunner",
+        "power": "Code Duello",
+        "subclass": "Top-tree Nova Bomb",
+        "exotic": "Contraverse Hold"
+      }
+    ]
+  },
+  {
+    "name": "K1 Crew Quarters",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Fallen Captains."
+      },
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Servitors. Last Barrier Servitor spawns when the boss is at 50% health."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Solar",
+        "frequency": "many",
+        "desc": "Shanks have solar shields."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Hot Knife",
+        "desc": "Shanks now have Solar shields."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "name": "K1 Logistics",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Fallen Captains."
+      },
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Servitors."
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Solar",
+        "frequency": "many",
+        "desc": "Shanks have Solar shields."
+      },
+      {
+        "name": "Arc",
+        "frequency": "few",
+        "desc": "Fallen Captains have Arc shields. There's one in the first area and a few in the boss area."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Hot Knife",
+        "desc": "Shanks now have Solar shields."
+      }
+    ],
+    "notes": "Servitor boss teleports twice at each 3rd of its health, starting from middle → left → right."
+  },
+  {
+    "name": "Metamorphosis",
+    "location": "Savathȗn’s Throne World",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 3,
+        "desc": "Scorn Chieftains. Two in the first room, one in the second. They throw lots of totems."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2,
+        "desc": "One in the second room, another in the boss room."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "2"
+      },
+      {
+        "name": "Solar",
+        "frequency": "1"
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
+      }
+    ],
+    "notes": "Destroy the three crystals at the end of each room to take down the enemy's immune shield."
+  },
+  {
+    "name": "Sepulcher",
+    "location": "Savathȗn’s Throne World",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Knights. One in the first room, one in the hallway after the first room, and one in the boss room. The second one can run to the next room; recommended to kill it quickly before it does."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 1,
+        "desc": "Unstoppable Ogre in the second room."
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "few",
+        "desc": "Arc Knights."
+      },
+      {
+        "name": "Solar",
+        "frequency": "1",
+        "desc": "Solar Wizard in the first room."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+      }
+    ],
+    "notes": "Two Hive Guardians: one in the first room, and another in the second."
+  },
+  {
+    "name": "Extraction",
+    "location": "Savathȗn’s Throne World",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 1,
+        "desc": "Scorn Chieftain in the first room."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2,
+        "desc": "Unstoppable Ogre. One in the plates room, and one in the boss room."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "many",
+        "desc": "Arc Knights throughout."
+      },
+      {
+        "name": "Void",
+        "frequency": "few",
+        "desc": "Scorn Raiders in the first room."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Raider Shield",
+        "desc": "Scorn Raiders now have Void shields."
+      }
+    ],
+    "notes": "Many ads spawn during the plate capturing. Final boss is a Hive Guardian wizard."
+  }
+]

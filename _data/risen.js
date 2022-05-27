@@ -1,1 +1,1 @@
-module.exports = require("../js/risen.json");
+module.exports = require("../js/haunted.json");
