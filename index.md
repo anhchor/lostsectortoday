@@ -13,3 +13,6 @@ The armour drop rotation is Chest → Helmet → Legs → Arms → repeat.
 - Thursday, May 26 – [K1 Revelation](/sector/k1-revelation), drops Legs
 - Friday, May 27 – [K1 Communion](/sector/k1-communion/), drops Arms
 - Saturday, May 28 – ???, drops Chest
+- Sunday, May 29 - [Metamorphosis](/sector/metamorphosis), drops Helmet
+- Monday, May 30 – [Sepulcher](/sector/sepulcher), drops Legs
+- Tuesday, May 31 - [Extraction](/sector/extraction), drops Arms
