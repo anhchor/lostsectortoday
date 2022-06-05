@@ -1,5 +1,277 @@
 [
   {
+    "name": "Concealed Void",
+    "location": "Europa",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 3,
+        "desc": "Fallen Captains. The second Overload Champion is bugged, and doesn't stay stunned."
+      },
+      {
+        "name": "Barrier",
+        "number": 1,
+        "desc": "Barrier Servitor that shields enemies. It frequently teleports behind cover."
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 2,
+        "desc": "Void Servitor in the boss room that shields enemies. You can get away with ignoring it and focusing only on the boss. It seems that if you kill the first one, another will spawn in a later wave."
+      },
+      {
+        "name": "Solar",
+        "frequency": 2,
+        "desc": "Heavy Shanks."
+      },
+      {
+        "name": "Arc",
+        "frequency": 1,
+        "desc": "Fallen Captain."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Arach-NO!",
+        "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
+      }
+    ],
+    "notes": "There's a wave of Exploder Shanks when you jump across the gap before the boss room. The boss is a Fallen Captain that teleports around."
+  },
+  {
+    "name": "Bunker E15",
+    "location": "Europa",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 3,
+        "desc": "Overload Captain in the beginning. Two Overload Minotaurs in the boss room, though the second one sometimes doesn't spawn if you defeat the boss quickly enough."
+      },
+      {
+        "name": "Barrier",
+        "number": 1,
+        "desc": "Barrier Hobgoblin."
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "few",
+        "desc": "Void Minotaurs."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Shocker",
+        "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
+      }
+    ],
+    "notes": "Cyclops in the big room. One Wyvern in the boss room. The third Overload champion sometimes doesn't spawn in the boss room if you defeat the boss quickly enough. Boss is a Hydra that slowly teleports around."
+  },
+  {
+    "name": "Perdition",
+    "location": "Europa",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Overload Minotaurs."
+      },
+      {
+        "name": "Barrier",
+        "number": 2,
+        "desc": "Barrier Hobgoblins."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 2,
+        "desc": "Void Minotaurs."
+      },
+      {
+        "name": "Arc",
+        "frequency": "many",
+        "desc": "Arc Harpies."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Shocker",
+        "desc": "When defeated, Goblins spawn Arc pools that cause damage over time."
+      }
+    ],
+    "notes": "Two Wyverns in the second room. Mini Hydra spawns in first room and keeps teleporting back; it's helpful to kill it sooner rather than later. Boss can be melted with a super as soon as it spawns."
+  },
+  {
+    "name": "Veles Labyrinth",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 3,
+        "desc": "Barrier Knights. First one in one of the Hive rooms, second one in the hallway before the main area, and third one on the upstairs platform."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 1,
+        "desc": "Unstoppable Ogre, across the gap in the main area."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "many",
+        "desc": "Arc Knights."
+      },
+      {
+        "name": "Solar",
+        "frequency": "few",
+        "desc": "Solar wizards."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Fire Pit",
+        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+      }
+    ],
+    "notes": "You have to shoot three runes in the first section in order to progress to the main room. There are a number of spawns in the boss area before the boss appears."
+  },
+  {
+    "name": "Exodus Garden 2A",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Overload Captains."
+      },
+      {
+        "name": "Barrier",
+        "number": 2,
+        "desc": "Barrier Servitors"
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "few",
+        "desc": "Servitors."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
+      }
+    ],
+    "notes": "Boss is a big floating Servitor. You can melt it and skip the ads in the final room."
+  },
+  {
+    "name": "Aphelion’s Rest",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Appear on far away platforms, and often move behind cover."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2
+      }
+    ],
+    "burn": "Stasis",
+    "burnDesc": "Taken Acolytes and Boss have Stasis weapons that slow and freeze you.",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "many",
+        "desc": "Taken Acolytes all have Void shields."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Epitaph",
+        "desc": "Taken combatants generate blight geysers when defeated."
+      }
+    ],
+    "notes": "Taken Psions duplicate frequently and quickly. Lots of Stasis AOE damage in the boss area."
+  },
+  {
+    "name": "Bay of Drowned Wishes",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "One outside of the cave barrier, and one on the far platform in the boss room."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3,
+        "desc": "Last champion spawns when you get closer to the cave barrier. Each spawn is accompanied by many Screebs."
+      }
+    ],
+    "burn": "Arc",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 1,
+        "desc": "One Scorn Raider on a far away platform."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Raider Shield",
+        "desc": "Scorn Raiders now have Void shields."
+      }
+    ],
+    "notes": "Lots of Screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter."
+  }, 
+  {
+    "name": "Chamber of Starlight",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload",
+        "number": 1,
+        "desc": "On far away platform and can be sniped at."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "many",
+        "desc": "Taken Acolytes all have Void shields. Wizard Boss has Void shield."
+      },
+      {
+        "name": "Solar",
+        "frequency": "2",
+        "desc": "Taken Knights."
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Epitaph",
+        "desc": "Taken combatants generate blight geysers when defeated."
+      }
+    ],
+    "notes": "Lots of Taken Acolytes and Thrall."
+  },
+  {
     "name": "K1 Crew Quarters",
     "location": "The Moon",
     "champions": [
@@ -131,16 +403,7 @@
         "desc": "When defeated, Fallen Vandals spawn a web mine at their feet."
       }
     ],
-    "notes": "Boss appears after you kill the ads and Heavy Shank. You can prevent the third Barrier Servitor and a wave of Exploder Shanks from spawning if you kill the boss fast enough.",
-    "loadout": [
-      {
-        "kinetic": "Chroma Rush",
-        "energy": "Riskrunner",
-        "power": "Code Duello",
-        "subclass": "Top-tree Nova Bomb",
-        "exotic": "Contraverse Hold"
-      }
-    ]
+    "notes": "Boss appears after you kill the ads and Heavy Shank. You can prevent the third Barrier Servitor and a wave of Exploder Shanks from spawning if you kill the boss fast enough."
   },
   {
     "name": "The Conflux",

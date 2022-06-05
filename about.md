@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-desc: 'The daily Legend/Master Lost Sectors in Destiny 2. Updated for Season 16: Season of the Risen.'
+desc: 'The daily Legend Lost Sector in Destiny 2. Updated for Season 17: Season of the Haunted.'
 ---
 
 ## Lost Sectors Overview 

@@ -8,8 +8,6 @@ const sectorList = [
 ]
 
 
-let seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
-let seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
 const seasonHauntedStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
 const seasonHauntedEnd = new Date(Date.UTC(2022, 7, 23, 17, 0, 0));
 

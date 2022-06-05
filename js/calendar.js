@@ -1,6 +1,6 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
-  // Season 16 - Season of the Risen
+  // Season 17 - Season of the Haunted
   "K1 Crew Quarters", "K1 Logistics", "K1 Revelation", "K1 Communion",
   "The Conflux",
   "Metamorphosis", "Sepulcher", "Extraction",
@@ -46,9 +46,6 @@ let sectorId = 0;
 let mayStart = new Date(Date.UTC(2022, 4, 1, 17, 0, 0));
 let juneStart = new Date(Date.UTC(2022, 5, 1, 17, 0, 0));
 
-const seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
-const seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
-
 const seasonHauntedStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
 const seasonHauntedEnd = new Date(Date.UTC(2022, 7, 23, 17, 0, 0));
 
@@ -63,8 +60,6 @@ function Month(days, before, after, start, end) {
   this.end = end;
 }
 
-const mar = new Month(31, 2, 2, new Date(Date.UTC(2022, 2, 1, 17, 0, 0)), new Date(Date.UTC(2022, 3, 1, 17, 0, 0)));
-const apr = new Month(30, 5, 0, new Date(Date.UTC(2022, 3, 1, 17, 0, 0)), new Date(Date.UTC(2022, 4, 1, 17, 0, 0))); 
 const may = new Month(31, 0, 4, new Date(Date.UTC(2022, 4, 1, 17, 0, 0)), new Date(Date.UTC(2022, 5, 1, 17, 0, 0)));
 const june = new Month(30, 3, 2, new Date(Date.UTC(2022, 5, 1, 17, 0, 0)), new Date(Date.UTC(2022, 6, 1, 17, 0, 0)));
 
