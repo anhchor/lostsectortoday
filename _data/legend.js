@@ -1,1 +1,1 @@
-module.exports = require("../js/legend.json");
+module.exports = require("../js/sectors.json");

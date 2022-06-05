@@ -8,16 +8,36 @@ layout: layout
 
 {{ content }}
 
+<h2>Season of the Haunted</h2>
+
+<p>Season 16 (May 24, 2022 – August 23, 2022)</p>
+
+<ul class="ls-list">
+{% for legend in legend %}
+  <li><a href="/sector/{{ legend.name | slug }}">{{ legend.name }}</a> ({{ legend.location }})</li>
+{% endfor %}
+</ul>
+
+<hr> 
+
 <h2>Season of the Risen</h2>
 
 <p>Season 16 (February 22, 2022 – May 24, 2022)</p>
 
 <ul class="ls-list">
-{% for risen in risen %}
-  <li><a href="/sector/{{ risen.name | slug }}">{{ risen.name }}</a> ({{ risen.location }})</li>
-{% endfor %}
+  <li><a href="/sector/veles-labyrinth">Veles Labyrinth</a> (The Cosmodrome)</li>
+  <li><a href="/sector/exodus-garden-2a">Exodus Garden 2A</a> (The Cosmodrome)</li>
+  <li><a href="/sector/aphelion's-rest">Aphelion’s Rest</a> (The Dreaming City)</li>
+  <li><a href="/sector/bay-of-drowned-wishes">Bay of Drowned Wishes</a> (The Dreaming City)</li>
+  <li><a href="/sector/chamber-of-starlight">Chamber of Starlight</a> (The Dreaming City)</li>
+  <li><a href="/sector/k1-revelation">K1 Revelation</a> (The Moon)</li>
+  <li><a href="/sector/k1-communion">K1 Communion</a> (The Moon)</li>
+  <li><a href="/sector/k1-crew-quarters">K1 Crew Quarters</a> (The Moon)</li>
+  <li><a href="/sector/k1-logistics">K1 Logistics</a> (The Moon)</li>
+  <li><a href="/sector/metamorphosis">Metamorphosis</a> (Savathȗn’s Throne World)</li>
+  <li><a href="/sector/sepulcher">Sepulcher</a> (Savathȗn’s Throne World)</li>
+  <li><a href="/sector/extraction">Extraction</a> (Savathȗn’s Throne World)</li>
 </ul>
-
 
 <hr>
 

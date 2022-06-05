@@ -1,10 +1,10 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
   // Season 16 - Season of the Risen
-  "Veles Labyrinth", "Exodus Garden 2A",
-  "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight",
-  "K1 Revelation", "K1 Crew Quarters", "K1 Logistics",
-  "Metamorphosis", "Sepulcher", "Extraction"
+  "K1 Crew Quarters", "K1 Logistics", "K1 Revelation", "K1 Communion",
+  "The Conflux",
+  "Metamorphosis", "Sepulcher", "Extraction",
+  "Excavation Site XII", "Skydock IV", "The Quarry"
 ]
 
 function toDays(x) {
@@ -42,12 +42,15 @@ let dropId = 0;
 let sectorId = 0;
 
 
-let marStart = new Date(Date.UTC(2022, 2, 1, 17, 0, 0));
-let aprStart = new Date(Date.UTC(2022, 3, 1, 17, 0, 0));
+
 let mayStart = new Date(Date.UTC(2022, 4, 1, 17, 0, 0));
+let juneStart = new Date(Date.UTC(2022, 5, 1, 17, 0, 0));
 
 const seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
 const seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+
+const seasonHauntedStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+const seasonHauntedEnd = new Date(Date.UTC(2022, 7, 23, 17, 0, 0));
 
 let todayDrop;
 let todaySector;
@@ -63,6 +66,7 @@ function Month(days, before, after, start, end) {
 const mar = new Month(31, 2, 2, new Date(Date.UTC(2022, 2, 1, 17, 0, 0)), new Date(Date.UTC(2022, 3, 1, 17, 0, 0)));
 const apr = new Month(30, 5, 0, new Date(Date.UTC(2022, 3, 1, 17, 0, 0)), new Date(Date.UTC(2022, 4, 1, 17, 0, 0))); 
 const may = new Month(31, 0, 4, new Date(Date.UTC(2022, 4, 1, 17, 0, 0)), new Date(Date.UTC(2022, 5, 1, 17, 0, 0)));
+const june = new Month(30, 3, 2, new Date(Date.UTC(2022, 5, 1, 17, 0, 0)), new Date(Date.UTC(2022, 6, 1, 17, 0, 0)));
 
 const main = document.querySelector('main');
 
@@ -77,7 +81,7 @@ function buildDay(month) {
 }
 
 function getSeasonDay(month) {
-  let seasonDay = month.start - seasonRisenStart;
+  let seasonDay = month.start - seasonHauntedStart;
   console.log(seasonDay);
 }
 
@@ -96,7 +100,7 @@ function cycleId(id, list) {
 function buildCalendar(month) {
   let monthName = month.start.toLocaleString('default', { month: 'long' });
   let year = month.start.toLocaleString('default', { year: 'numeric' });
-  let firstDay = toDays(month.start - seasonRisenStart);
+  let firstDay = toDays(month.start - seasonHauntedStart);
 
   let firstDaySectorId = getId(firstDay, sectorList);
   let firstDayDropId = getId(firstDay, dropList);
@@ -150,10 +154,10 @@ function buildCalendar(month) {
 }
 
 
-buildCalendar(may);
+buildCalendar(june);
 
 let now = Date.now();
-let currentDayOfMonth = toDays(now - mayStart);
+let currentDayOfMonth = toDays(now - juneStart);
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
 

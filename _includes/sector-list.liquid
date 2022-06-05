@@ -9,8 +9,8 @@ layout: layout
 {{ content }}
 
 <ul class="ls-list">
-{% for risen in risen %}
-  <li><a href="/sector/{{ risen.name | slug }}">{{ risen.name }}</a> ({{ risen.location }})</li>
+{% for legend in legend %}
+  <li><a href="/sector/{{ legend.name | slug }}">{{ legend.name }}</a> ({{ legend.location }})</li>
 {% endfor %}
 </ul>
 

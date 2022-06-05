@@ -1,28 +1,28 @@
 ---
 layout: layout
 pagination: 
-  data: risen
+  data: legend
   size: 1
-  alias: risen
-permalink: "sector/{{ risen.name | slug }}/"
+  alias: legend
+permalink: "sector/{{ legend.name | slug }}/"
 eleventyComputed:
   title: |
-    {{ risen.name }}
+    {{ legend.name }}
   desc: |
-    {{ risen.name }} Lost Sector at Legend (1560) difficulty – champions, burn, shields, modifiers, and notes.
+    {{ legend.name }} Lost Sector at Legend (1560) difficulty – champions, burn, shields, modifiers, and notes.
 ---
 
 <main class="ls-container">
 
 <article class="ls">
   <div class="ls__meta">
-    Legend (1560)<span class="ls__location">{{ risen.location }}</span>
+    Legend (1560)<span class="ls__location">{{ legend.location }}</span>
   </div>
-  <h1 class="ls__name">{{ risen.name }}</h1>
+  <h1 class="ls__name">{{ legend.name }}</h1>
 
   <h2>Champions</h2>
   <ul class="ls__champions-list">
-    {% for champions in risen.champions %}
+    {% for champions in legend.champions %}
       <li class="ls__champions-item">
         <h3 class="ls__champion">
           {% include 'champions.liquid' %}
@@ -34,12 +34,12 @@ eleventyComputed:
   </ul>
   
   <h2>Burn</h2>
-  <h3 class="ls__element">{% include 'burn.liquid' %} {{ risen.burn }}</h3>
-  <p class="ls__burn-desc">{{ risen.burnDesc }}</p>
+  <h3 class="ls__element">{% include 'burn.liquid' %} {{ legend.burn }}</h3>
+  <p class="ls__burn-desc">{{ legend.burnDesc }}</p>
  
   <h2>Shields</h2>
   <ul class="ls__shields-list">
-    {% for shields in risen.shields %}
+    {% for shields in legend.shields %}
       <li class="ls__shields-item">
         <h3 class="ls__shield ls__element">
           {% include 'shields.liquid' %}
@@ -51,16 +51,16 @@ eleventyComputed:
   </ul>
     
   <h2>Modifiers</h2>
-  {% for modifiers in risen.modifiers %}
+  {% for modifiers in legend.modifiers %}
     <p><strong>{{ modifiers.name }}</strong> – {{ modifiers.desc }}</p>
   {% endfor %}
 
   <h2>Notes</h2>
-  <p>{{ risen.notes }}</p>
+  <p>{{ legend.notes }}</p>
 
   {% comment %} <h2>Personal Loadout</h2>
   <ul class="ls-list">
-    {% for loadout in risen.loadout %}
+    {% for loadout in legend.loadout %}
       <li><strong>Kinetic</strong>: {{ loadout.kinetic }}</li>
       <li><strong>Energy</strong>: {{ loadout.energy }}</li>
       <li><strong>Power</strong>: {{ loadout.power }}</li>

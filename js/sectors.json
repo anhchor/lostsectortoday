@@ -1,167 +1,70 @@
 [
   {
-    "name": "Veles Labyrinth",
-    "location": "The Cosmodrome",
+    "name": "K1 Crew Quarters",
+    "location": "The Moon",
     "champions": [
+      {
+        "name": "Overload",
+        "number": 2,
+        "desc": "Fallen Captains."
+      },
       {
         "name": "Barrier",
         "number": 3,
-        "desc": "Barrier Knights. First one in one of the Hive rooms, second one in the hallway before the main area, and third one on the upstairs platform."
-      },
-      {
-        "name": "Unstoppable",
-        "number": 1,
-        "desc": "Unstoppable Ogre, across the gap in the main area."
+        "desc": "Barrier Servitors. Last Barrier Servitor spawns when the boss is at 50% health."
       }
     ],
     "burn": "Arc",
     "shields": [
       {
-        "name": "Arc",
-        "frequency": "many",
-        "desc": "Arc Knights."
-      },
-      {
         "name": "Solar",
-        "frequency": "few",
-        "desc": "Solar wizards."
+        "frequency": "many",
+        "desc": "Shanks have solar shields."
       }
     ],
     "modifiers": [
       {
-        "name": "Fire Pit",
-        "desc": "When defeated, Acolytes spawn fire pools that cause damage over time."
+        "name": "Hot Knife",
+        "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "You have to shoot three runes in the first section in order to progress to the main room. There are a number of spawns in the boss area before the boss appears."
+    "notes": ""
   },
   {
-    "name": "Exodus Garden 2A",
-    "location": "The Cosmodrome",
+    "name": "K1 Logistics",
+    "location": "The Moon",
     "champions": [
       {
         "name": "Overload",
         "number": 2,
-        "desc": "Overload Captains."
+        "desc": "Fallen Captains."
       },
       {
         "name": "Barrier",
-        "number": 2,
-        "desc": "Barrier Servitors"
+        "number": 3,
+        "desc": "Barrier Servitors."
       }
     ],
     "burn": "Void",
     "shields": [
       {
-        "name": "Void",
-        "frequency": "few",
-        "desc": "Servitors."
-      }
-    ],
-    "modifiers": [
-      {
-        "name": "Scorched Earth",
-        "desc": "Enemies throw grenades significantly more often."
-      }
-    ],
-    "notes": "Boss is a big floating Servitor. You can melt it and skip the ads in the final room."
-  },
-  {
-    "name": "Aphelion’s Rest",
-    "location": "The Dreaming City",
-    "champions": [
-      {
-        "name": "Overload",
-        "number": 2,
-        "desc": "Appear on far away platforms, and often move behind cover."
-      },
-      {
-        "name": "Unstoppable",
-        "number": 2
-      }
-    ],
-    "burn": "Stasis",
-    "burnDesc": "Taken Acolytes and Boss have Stasis weapons that slow and freeze you.",
-    "shields": [
-      {
-        "name": "Void",
-        "frequency": "many",
-        "desc": "Taken Acolytes all have Void shields."
-      }
-    ],
-    "modifiers": [
-      {
-        "name": "Epitaph",
-        "desc": "Taken combatants generate blight geysers when defeated."
-      }
-    ],
-    "notes": "Taken Psions duplicate frequently and quickly. Lots of Stasis AOE damage in the boss area."
-  },
-  {
-    "name": "Bay of Drowned Wishes",
-    "location": "The Dreaming City",
-    "champions": [
-      {
-        "name": "Overload",
-        "number": 2,
-        "desc": "One outside of the cave barrier, and one on the far platform in the boss room."
-      },
-      {
-        "name": "Unstoppable",
-        "number": 3,
-        "desc": "Last champion spawns when you get closer to the cave barrier. Each spawn is accompanied by many Screebs."
-      }
-    ],
-    "burn": "Arc",
-    "shields": [
-      {
-        "name": "Void",
-        "frequency": 1,
-        "desc": "One Scorn Raider on a far away platform."
-      }
-    ],
-    "modifiers": [
-      {
-        "name": "Raider Shield",
-        "desc": "Scorn Raiders now have Void shields."
-      }
-    ],
-    "notes": "Lots of Screebs. Boss room ads seem to spawn infinitely. Ads will jump up onto the platform where you enter."
-  }, 
-  {
-    "name": "Chamber of Starlight",
-    "location": "The Dreaming City",
-    "champions": [
-      {
-        "name": "Overload",
-        "number": 1,
-        "desc": "On far away platform and can be sniped at."
-      },
-      {
-        "name": "Unstoppable",
-        "number": 3
-      }
-    ],
-    "burn": "Solar",
-    "shields": [
-      {
-        "name": "Void",
-        "frequency": "many",
-        "desc": "Taken Acolytes all have Void shields. Wizard Boss has Void shield."
-      },
-      {
         "name": "Solar",
-        "frequency": "2",
-        "desc": "Taken Knights."
+        "frequency": "many",
+        "desc": "Shanks have Solar shields."
+      },
+      {
+        "name": "Arc",
+        "frequency": "few",
+        "desc": "Fallen Captains have Arc shields. There's one in the first area and a few in the boss area."
       }
     ],
     "modifiers": [
       {
-        "name": "Epitaph",
-        "desc": "Taken combatants generate blight geysers when defeated."
+        "name": "Hot Knife",
+        "desc": "Shanks now have Solar shields."
       }
     ],
-    "notes": "Lots of Taken Acolytes and Thrall."
+    "notes": "Servitor boss teleports twice at each 3rd of its health, starting from middle → left → right."
   },
   {
     "name": "K1 Revelation",
@@ -240,71 +143,31 @@
     ]
   },
   {
-    "name": "K1 Crew Quarters",
-    "location": "The Moon",
+    "name": "The Conflux",
+    "location": "Nessus",
     "champions": [
       {
         "name": "Overload",
-        "number": 2,
-        "desc": "Fallen Captains."
+        "number": "???"
       },
       {
-        "name": "Barrier",
-        "number": 3,
-        "desc": "Barrier Servitors. Last Barrier Servitor spawns when the boss is at 50% health."
+        "name": "Unstoppable",
+        "number": "???"
       }
     ],
-    "burn": "Arc",
+    "burn": "Solar",
     "shields": [
       {
-        "name": "Solar",
-        "frequency": "many",
-        "desc": "Shanks have solar shields."
+        "name": "Void",
+        "frequency": "???"
       }
     ],
     "modifiers": [
       {
-        "name": "Hot Knife",
-        "desc": "Shanks now have Solar shields."
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
       }
-    ],
-    "notes": ""
-  },
-  {
-    "name": "K1 Logistics",
-    "location": "The Moon",
-    "champions": [
-      {
-        "name": "Overload",
-        "number": 2,
-        "desc": "Fallen Captains."
-      },
-      {
-        "name": "Barrier",
-        "number": 3,
-        "desc": "Barrier Servitors."
-      }
-    ],
-    "burn": "Void",
-    "shields": [
-      {
-        "name": "Solar",
-        "frequency": "many",
-        "desc": "Shanks have Solar shields."
-      },
-      {
-        "name": "Arc",
-        "frequency": "few",
-        "desc": "Fallen Captains have Arc shields. There's one in the first area and a few in the boss area."
-      }
-    ],
-    "modifiers": [
-      {
-        "name": "Hot Knife",
-        "desc": "Shanks now have Solar shields."
-      }
-    ],
-    "notes": "Servitor boss teleports twice at each 3rd of its health, starting from middle → left → right."
+    ]
   },
   {
     "name": "Metamorphosis",
@@ -411,5 +274,98 @@
       }
     ],
     "notes": "Many ads spawn during the plate capturing. Final boss is a Hive Guardian wizard."
+  },
+  {
+    "name": "Excavation Site XII",
+    "location": "The EDZ",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 1,
+        "desc": "Barrier Colossus, sometimes goes back up on the cliff."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3,
+        "desc": "One in the first room, one in mid, one next to the boss."
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Arc",
+        "frequency": "1",
+        "desc": "???"
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
+      }
+    ],
+    "notes": "Boss is kind of tanky."
+  },
+  {
+    "name": "Skydock IV",
+    "location": "The EDZ",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 1,
+        "desc": "Barrier Colossus, sometimes goes back up on the cliff."
+      },
+      {
+        "name": "Unstoppable",
+        "number": 3,
+        "desc": "One in the first room, one when you drop down, and one in the boss room."
+      }
+    ],
+    "burn": "Solar",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": "few"
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Pestilence",
+        "desc": "When defeated, Psions spawn Void grenades at their feet."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "name": "The Quarry",
+    "location": "The EDZ",
+    "champions": [
+      {
+        "name": "Barrier",
+        "number": 2
+      },
+      {
+        "name": "Unstoppable",
+        "number": 2
+      }
+    ],
+    "burn": "Void",
+    "shields": [
+      {
+        "name": "Void",
+        "frequency": 1
+      },
+      {
+        "name": "Solar",
+        "frequency": 1
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Scorched Earth",
+        "desc": "Enemies throw grenades significantly more often."
+      }
+    ],
+    "notes": ""
   }
 ]

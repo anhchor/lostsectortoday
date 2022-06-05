@@ -1,18 +1,21 @@
 const dropList = ["Chest", "Helmet", "Legs", "Arms"]
 const sectorList = [
-  // Season 16 - Season of the Risen
-  "Veles Labyrinth", "Exodus Garden 2A",
-  "Aphelion’s Rest", "Bay of Drowned Wishes", "Chamber of Starlight",
-  "K1 Revelation", "K1 Crew Quarters", "K1 Logistics",
-  "Metamorphosis", "Sepulcher", "Extraction"
+  // Season 17 - Season of the Haunted
+  "K1 Crew Quarters", "K1 Logistics", "K1 Revelation", "K1 Communion",
+  "The Conflux",
+  "Metamorphosis", "Sepulcher", "Extraction",
+  "Excavation Site XII", "Skydock IV", "The Quarry"
 ]
 
 
 let seasonRisenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
 let seasonRisenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+const seasonHauntedStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+const seasonHauntedEnd = new Date(Date.UTC(2022, 7, 23, 17, 0, 0));
+
 
 let now = Date.now();
-let currentDayOfSeason = now - seasonRisenStart;
+let currentDayOfSeason = now - seasonHauntedStart;
 
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;
@@ -95,7 +98,7 @@ function fillInfo() {
 
 
 
-fetch('/js/risen.json')
+fetch('/js/sectors.json')
   .then(
     function(response) {
       if (response.status !== 200) {
