@@ -410,7 +410,7 @@
     "location": "Nessus",
     "champions": [
       {
-        "name": "Overload",
+        "name": "Barrier",
         "number": "???"
       },
       {
@@ -422,7 +422,7 @@
     "shields": [
       {
         "name": "Void",
-        "frequency": "???"
+        "frequency": "many"
       }
     ],
     "modifiers": [
