@@ -45,6 +45,7 @@ let sectorId = 0;
 
 let mayStart = new Date(Date.UTC(2022, 4, 1, 17, 0, 0));
 let juneStart = new Date(Date.UTC(2022, 5, 1, 17, 0, 0));
+let julyStart = new Date(Date.UTC(2022, 6, 1, 17, 0, 0));
 
 const seasonHauntedStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
 const seasonHauntedEnd = new Date(Date.UTC(2022, 7, 23, 17, 0, 0));
@@ -62,6 +63,7 @@ function Month(days, before, after, start, end) {
 
 const may = new Month(31, 0, 4, new Date(Date.UTC(2022, 4, 1, 17, 0, 0)), new Date(Date.UTC(2022, 5, 1, 17, 0, 0)));
 const june = new Month(30, 3, 2, new Date(Date.UTC(2022, 5, 1, 17, 0, 0)), new Date(Date.UTC(2022, 6, 1, 17, 0, 0)));
+const july = new Month(31, 5, 6, new Date(Date.UTC(2022, 6, 1, 17, 0, 0)), new Date(Date.UTC(2022, 7, 1, 17, 0, 0)));
 
 const main = document.querySelector('main');
 
@@ -150,6 +152,7 @@ function buildCalendar(month) {
 
 
 buildCalendar(june);
+buildCalendar(july);
 
 let now = Date.now();
 let currentDayOfMonth = toDays(now - juneStart);
