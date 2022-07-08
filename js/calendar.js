@@ -151,11 +151,10 @@ function buildCalendar(month) {
 }
 
 
-buildCalendar(june);
 buildCalendar(july);
 
 let now = Date.now();
-let currentDayOfMonth = toDays(now - juneStart);
+let currentDayOfMonth = toDays(now - julyStart);
 const today = document.querySelectorAll('.day--active')[currentDayOfMonth - 1]; // -1 for zero-index
 today.classList.add('day--today');
 
